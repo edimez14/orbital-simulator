@@ -12,3 +12,6 @@ pytest
 
 # Medicion de cobertura de pruebas.
 pytest-cov
+
+# Empaquetado del instalador/ejecutable (ver docs/distribucion.md).
+pyinstaller

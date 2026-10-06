@@ -64,8 +64,14 @@ orbital-simulator/
 ├── data/
 │   └── presets.json
 ├── docs/
-│   └── informe_tecnico.md
-├── assets/            # texturas/iconos (opcional)
+│   ├── informe_tecnico.md
+│   └── distribucion.md
+├── build_hooks/                    # hooks de PyInstaller (VPython)
+│   └── hook-vpython.py
+├── .github/workflows/              # compila instaladores en CI
+│   └── build-installers.yml
+├── assets/                         # texturas/iconos (opcional)
+├── orbital_simulator.spec          # receta del instalador
 ├── .gitignore
 ├── requirements.txt
 ├── requirements-dev.txt
@@ -117,6 +123,21 @@ git@github.com:edimez14/orbital-simulator.git
 ```bash
 git clone git@github.com:edimez14/orbital-simulator.git
 ```
+
+## Distribución (usar en cualquier parte)
+
+El objetivo es un **instalador/ejecutable** que funcione sin tener Python
+instalado. Se genera con PyInstaller a partir de la receta `orbital_simulator.spec`.
+
+```bash
+pip install -r requirements-dev.txt
+pyinstaller orbital_simulator.spec
+# resultado en dist/orbital-simulator/
+```
+
+Como PyInstaller no compila entre sistemas operativos, el workflow
+`.github/workflows/build-installers.yml` genera el ejecutable de Windows, macOS y
+Linux automáticamente. Detalles y decisiones en `docs/distribucion.md`.
 
 ## Estado actual
 
