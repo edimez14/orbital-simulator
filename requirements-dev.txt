@@ -1,0 +1,14 @@
+# código nuevo edizon
+# ---------------------------------------------------------------------------
+# Dependencias de desarrollo y pruebas (unitarias y de escenarios).
+# Instalar con:  pip install -r requirements-dev.txt
+# ---------------------------------------------------------------------------
+
+# Dependencias del simulador (numpy, matplotlib, vpython).
+-r requirements.txt
+
+# Framework de pruebas: unitarias y de escenarios parametrizados.
+pytest
+
+# Medicion de cobertura de pruebas.
+pytest-cov

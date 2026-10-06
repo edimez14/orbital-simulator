@@ -1,0 +1,12 @@
+{
+    "codigo_nuevo_edizon": true,
+    "_documentacion": {
+        "que_es": "Presets de condiciones iniciales para el simulador orbital.",
+        "para_que_sirve": "Cargar rapidamente escenarios de prueba sin escribirlos cada vez.",
+        "unidades": "AU (distancia), masas solares (masa), anos (tiempo).",
+        "como_se_usa": "main.py lee un preset por nombre y construye los cuerpos.",
+        "como_modificarlo": "Anadir un nuevo objeto dentro de 'presets' con la misma forma.",
+        "estado": "Sin datos aun; solo documentacion."
+    },
+    "presets": []
+}

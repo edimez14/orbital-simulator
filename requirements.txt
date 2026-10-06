@@ -1,0 +1,12 @@
+# código nuevo edizon
+# Dependencias del simulador orbital (Leyes de Kepler).
+# Se fijan versiones minimas para reproducibilidad. Ajustar al instalar.
+
+# Calculos numericos vectorizados (posiciones, velocidades, aceleraciones).
+numpy
+
+# Graficas 2D cientificas (energia, momento angular, segunda ley de Kepler).
+matplotlib
+
+# Visualizacion 3D interactiva orientada a fisica (escena y controles).
+vpython

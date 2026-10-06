@@ -1,0 +1,59 @@
+# código nuevo edizon
+# ---------------------------------------------------------------------------
+# .gitignore reutilizable para proyectos Python.
+#
+# Sirve para este proyecto y para cualquier otro proyecto Python.
+# Para usarlo en TODOS tus repos sin copiarlo, mira el ignore global en
+# ~/.config/git/ignore (ver README, seccion "Pruebas y control de versiones").
+# ---------------------------------------------------------------------------
+
+# --- Bytecode y compilados de Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Paquetes y builds ---
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# --- Entornos virtuales ---
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- Caches de pruebas y herramientas ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Editores e IDE ---
+.vscode/
+.idea/
+*.swp
+*~
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Resultados generados por el simulador ---
+data/output/
+results/
+*.npy
+*.npz
