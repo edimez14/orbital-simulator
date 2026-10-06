@@ -1,13 +1,14 @@
 <!-- código nuevo edizon -->
 # Carpeta `assets/`
 
-Carpeta opcional para recursos visuales: texturas, iconos o imagenes usadas por
-la escena 3D.
+Recursos visuales del simulador.
 
-El PDF la marca como **opcional**. Si el simulador no necesita recursos externos,
-esta carpeta puede quedar vacía o eliminarse sin afectar el funcionamiento.
+- `textures/` → todas las texturas (planetas, lunas, Sol, fondo).
 
-## Cómo usarla
+La guía completa de fuentes, licencias, nombres y tamaños está en
+`docs/recursos_visuales.md`.
 
-Coloca aquí los archivos de imagen o recursos y cárgalos desde
-`src/render/scene3d.py`.
+## Nota
+
+Esta carpeta es **opcional**. Si el programa se corre sin texturas, funciona
+igual: los cuerpos usan solo su `color`. Las texturas solo mejoran la apariencia.

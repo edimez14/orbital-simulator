@@ -65,12 +65,14 @@ orbital-simulator/
 │   └── presets.json
 ├── docs/
 │   ├── informe_tecnico.md
-│   └── distribucion.md
+│   ├── distribucion.md
+│   └── recursos_visuales.md
 ├── build_hooks/                    # hooks de PyInstaller (VPython)
 │   └── hook-vpython.py
 ├── .github/workflows/              # compila instaladores en CI
 │   └── build-installers.yml
-├── assets/                         # texturas/iconos (opcional)
+├── assets/                         # recursos visuales (opcional)
+│   └── textures/                   # planetas, lunas, estrellas, fondo
 ├── orbital_simulator.spec          # receta del instalador
 ├── .gitignore
 ├── requirements.txt
@@ -138,6 +140,12 @@ pyinstaller orbital_simulator.spec
 Como PyInstaller no compila entre sistemas operativos, el workflow
 `.github/workflows/build-installers.yml` genera el ejecutable de Windows, macOS y
 Linux automáticamente. Detalles y decisiones en `docs/distribucion.md`.
+
+## Recursos visuales
+
+Los cuerpos se dibujan con primitivas de VPython (esferas, curvas, puntos); VPython
+no carga modelos 3D externos. Las texturas gratuitas, sus licencias y dónde
+guardarlas están en `docs/recursos_visuales.md`.
 
 ## Estado actual
 
