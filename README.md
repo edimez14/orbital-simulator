@@ -104,9 +104,9 @@ pytest tests/scenarios        # solo los escenarios
 pytest --cov=src              # con cobertura
 ```
 
-Para el ignore: el proyecto usa `.gitignore` (Python + salidas del simulador). Si
-quieres el mismo comportamiento en todos tus repos, se activó un ignore global en
-`~/.config/git/ignore` con `git config --global core.excludesFile`.
+Para el ignore, el proyecto usa su propio `.gitignore`, que cubre lo universal de
+Python y lo propio del simulador. Ese archivo se puede copiar a cualquier otro
+proyecto Python como plantilla.
 
 ## Repositorio
 
