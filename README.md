@@ -71,8 +71,10 @@ orbital-simulator/
 │   └── hook-vpython.py
 ├── .github/workflows/              # compila instaladores en CI
 │   └── build-installers.yml
-├── assets/                         # recursos visuales (opcional)
+├── assets/                         # recursos visuales
 │   └── textures/                   # planetas, lunas, estrellas, fondo
+├── scripts/                        # utilidades (descarga de texturas)
+│   └── descargar_texturas.sh
 ├── orbital_simulator.spec          # receta del instalador
 ├── .gitignore
 ├── requirements.txt
@@ -144,8 +146,8 @@ Linux automáticamente. Detalles y decisiones en `docs/distribucion.md`.
 ## Recursos visuales
 
 Los cuerpos se dibujan con primitivas de VPython (esferas, curvas, puntos); VPython
-no carga modelos 3D externos. Las texturas gratuitas, sus licencias y dónde
-guardarlas están en `docs/recursos_visuales.md`.
+no carga modelos 3D externos. Las texturas (ya descargadas en `assets/textures/`),
+sus licencias y cómo regenerarlas están en `docs/recursos_visuales.md`.
 
 ## Estado actual
 

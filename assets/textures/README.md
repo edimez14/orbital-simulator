@@ -1,30 +1,39 @@
 <!-- código nuevo edizon -->
 # Carpeta `assets/textures/`
 
-Aquí van todas las **texturas** que usan los cuerpos celestes y el fondo. La guía
+Aquí están las **texturas** que usan los cuerpos celestes y el fondo. La guía
 completa (fuentes, licencias, nombres y tamaños) está en
 `docs/recursos_visuales.md`.
 
-## Subcarpetas
+## Contenido actual
 
-| Carpeta | Qué guardar | Ejemplo |
-|---------|-------------|---------|
-| `planets/` | Mapas de planetas (2:1) y anillos | `earth.jpg`, `mars.jpg`, `saturn_ring.png` |
-| `moons/` | Lunas | `moon.jpg` |
-| `stars/` | Sol y estrellas | `sun.jpg` |
-| `background/` | Fondo estelar / Vía Láctea | `milkyway.jpg` |
+| Carpeta | Archivos |
+|---------|----------|
+| `planets/` | `mercurio.jpg`, `venus.jpg`, `tierra.jpg`, `marte.jpg`, `jupiter.jpg`, `saturno.jpg`, `saturno_anillo.png`, `urano.jpg`, `neptuno.jpg` |
+| `moons/` | `luna.jpg` |
+| `stars/` | `sol.jpg` |
+| `background/` | `fondo_estelar.jpg` |
+
+Todas son de **Solar System Scope**, licencia **CC BY 4.0** (ver créditos en la
+guía).
 
 ## Reglas rápidas
 
 - Nombres en minúsculas, sin espacios ni tildes.
 - Mapas de planetas en proporción **2:1** y dimensiones **potencia de 2**
-  (2048×1024 es ideal).
+  (2048×1024).
 - `.jpg` para color; `.png` solo si necesitas transparencia.
 
 ## Cómo se usan en el código
 
 Se referencian desde `src/render/scene3d.py` con el argumento `texture=`, por
-ejemplo `texture="assets/textures/planets/earth.jpg"`.
+ejemplo `texture="assets/textures/planets/tierra.jpg"`.
 
-Mientras no haya texturas, el simulador funciona igual: usa solo el `color` de
-cada cuerpo.
+Si falta una textura, el simulador funciona igual: usa solo el `color` de cada
+cuerpo.
+
+## Volver a descargarlas
+
+```bash
+bash scripts/descargar_texturas.sh
+```

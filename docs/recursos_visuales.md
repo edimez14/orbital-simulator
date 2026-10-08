@@ -39,35 +39,45 @@ Si algún día se quisiera usar modelos 3D reales, habría que cambiar de motor
 ## 3. Dónde guardar las texturas
 
 Todas las texturas van dentro de la carpeta **`assets/textures/`**, cada tipo en
-su subcarpeta:
+su subcarpeta. **Ya están descargadas y ordenadas:**
 
 ```
 assets/
-├── README.md
 └── textures/
-    ├── README.md
-    ├── planets/       # mapas de planetas (2:1)
-    ├── moons/         # lunas
-    ├── stars/         # Sol y estrellas
-    └── background/    # fondo estelar / Vía Láctea
+    ├── planets/
+    │   ├── mercurio.jpg
+    │   ├── venus.jpg
+    │   ├── tierra.jpg
+    │   ├── marte.jpg
+    │   ├── jupiter.jpg
+    │   ├── saturno.jpg
+    │   ├── saturno_anillo.png
+    │   ├── urano.jpg
+    │   └── neptuno.jpg
+    ├── moons/
+    │   └── luna.jpg
+    ├── stars/
+    │   └── sol.jpg
+    └── background/
+        └── fondo_estelar.jpg
 ```
 
 ### Convenciones de nombre
 
-- Todo en minúsculas, sin espacios ni tildes: `earth.jpg`, `mars.jpg`.
+- Todo en minúsculas, **sin espacios ni tildes**: `tierra.jpg`, `marte.jpg`.
 - Color del planeta: `planets/<nombre>.jpg`.
-- Anillos (con transparencia): `planets/saturn_ring.png`.
-- Fondo: `background/milkyway.jpg`.
+- Anillos (con transparencia): `planets/saturno_anillo.png`.
+- Fondo: `background/fondo_estelar.jpg`.
 
 ### Formato y tamaño
 
-- **Mapas de planetas = equirectangulares, proporción 2:1** (por ejemplo
-  2048×1024). Así se envuelven bien en una esfera.
-- Dimensiones en **potencias de 2** (1024, 2048, 4096). Si no lo son, VPython
-  estira la imagen.
-- Usa `.jpg` para color (pesa menos). Usa `.png` solo cuando necesites
-  transparencia (anillos, nubes).
-- Evita 8K: pesa mucho y no se nota. **2048×1024 es suficiente**.
+- Los mapas de planetas son **equirectangulares, proporción 2:1** (2048×1024).
+  Así se envuelven bien en una esfera.
+- Dimensiones en **potencias de 2** (1024, 2048, 4096).
+- `.jpg` para color. `.png` solo cuando hace falta transparencia (el anillo de
+  Saturno).
+- Tamaño actual: cada mapa pesa ~450 KB; el total de la carpeta es ~5.9 MB.
+- Evita 8K: pesa mucho y no se nota.
 
 ---
 
@@ -75,65 +85,64 @@ assets/
 
 | Fuente | Qué trae | Licencia |
 |--------|----------|----------|
-| **Solar System Scope** — https://www.solarsystemscope.com/textures/ | Todos los planetas en 2K/4K/8K, anillos de Saturno, fondo estelar | CC BY 4.0 (dar crédito) |
+| **Solar System Scope** — https://www.solarsystemscope.com/textures/ | Todos los planetas en 2K/4K/8K, anillo de Saturno, fondo estelar | CC BY 4.0 (dar crédito) |
 | **NASA Visible Earth** — https://visibleearth.nasa.gov/ | Tierra, nubes, mapas reales | Dominio público |
 | **NASA Image Library** — https://images.nasa.gov/ | Sol, planetas, naves | Dominio público |
 | **ESO Milky Way panorama** — https://www.eso.org/public/images/eso0932a/ | Foto de la Vía Láctea para el fondo | CC BY 4.0 |
 | **Wikimedia Commons** — https://commons.wikimedia.org/ | Variado (planetas, lunas, cometas) | Revisar cada archivo |
-| **Planet Pixel Emporium** — http://planetpixelemporium.com/planets.html | Texturas de planetas | Revisar licencia en el sitio |
 
 ### Cómo leer las licencias
 
 - **Dominio público**: libre, sin condiciones.
-- **CC BY 4.0**: libre, pero hay que **dar crédito** (anótalo en la sección 9).
+- **CC BY 4.0**: libre, pero hay que **dar crédito** (ver sección 9).
 - **Cualquier otra**: revisar antes de usar. Si no dice nada claro, no la uses.
 
-Recuerda: **Solar System Scope es la fuente más rápida**. Trae casi todo lo que
-necesitas en un solo lugar.
+**Fuente más rápida: Solar System Scope.** Es la que se usó para descargar todo.
 
 ---
 
-## 5. Cómo descargarlas (paso a paso)
+## 5. Cómo descargarlas (o volver a descargarlas)
 
-1. Entra a **Solar System Scope** (`solarsystemscope.com/textures`).
-2. Descarga la versión de **2K** de cada planeta que vayas a usar.
-3. Descarga el **fondo estelar** y, si usas Saturno, su **anillo**.
-4. Renombra cada archivo según la sección 3 (`earth.jpg`, `mars.jpg`, etc.).
-5. Guárdalos en la subcarpeta que corresponde dentro de `assets/textures/`.
-6. Si una imagen no es potencia de 2, redimensiónala (con GIMP, o en línea).
+Las texturas **ya están en el proyecto**. Para bajarlas de nuevo o en otro
+computador, se usa el script, que las deja renombradas en español:
 
-No necesitas todos los planetas de una. Empieza con **Sol, Tierra y uno o dos
-más**; agrega el resto después.
+```bash
+bash scripts/descargar_texturas.sh
+```
+
+El script (en `scripts/descargar_texturas.sh`) salta los archivos que ya existen,
+así que se puede correr sin miedo. Para agregar o quitar texturas, se edita la
+lista `ARCHIVOS` dentro del script.
 
 ---
 
 ## 6. Cómo usarlas en el código
 
 - La textura se pasa con el argumento `texture=`.
-- Si el archivo está en `assets/textures/planets/earth.jpg`, se usa esa ruta.
+- Si el archivo está en `assets/textures/planets/tierra.jpg`, se usa esa ruta.
 - Espera a que carguen con `scene.waitfor("textures")` para que no aparezcan a
   medias.
 - **Diseño a prueba de fallos**: si la textura no existe, usa solo el `color`.
-  Así el simulador se ve bien aunque todavía no hayas descargado nada.
+  Así el simulador se ve bien aunque falte algún archivo.
 
 ```python
 # código nuevo edizon
 from vpython import sphere, vector, color
 
 # Con textura si existe; si no, solo color.
-earth = sphere(
+tierra = sphere(
     pos=vector(5, 0, 0),
     radius=0.15,
     color=color.blue,          # respaldo si falta la textura
-    texture="assets/textures/planets/earth.jpg",
+    texture="assets/textures/planets/tierra.jpg",
 )
 ```
 
 ### Empaquetado (PyInstaller)
 
 Cuando el programa se empaquete en un ejecutable, las texturas deben ir dentro.
-Hay que agregar la carpeta a `datas` en `orbital_simulator.spec` y resolver la
-ruta con `sys._MEIPASS` cuando el programa está congelado. Se deja anotado aquí
+Hay que agregar `assets/textures` a `datas` en `orbital_simulator.spec` y resolver
+la ruta con `sys._MEIPASS` cuando el programa está congelado. Se deja anotado aquí
 para cuando toque compilar.
 
 ---
@@ -156,24 +165,52 @@ visible es solo para poder verlo.
   del bucle de dibujo.
 - Las trayectorias (`curve`) con demasiados puntos se vuelven lentas: guarda cada
   N pasos (submuestreo).
-- El fondo estrellado con `points` es casi gratis; úsalo en vez de muchas esferas.
+- El fondo estelado con `points` es casi gratis; úsalo en vez de muchas esferas.
 - Texturas de 2K: suficiente. Evita 8K.
 
 ---
 
-## 9. Créditos y licencias (llenar al descargar)
+## 9. Créditos y licencias
 
-| Archivo | Fuente | Licencia | Autor / crédito |
-|---------|--------|----------|-----------------|
-| (ej.) `planets/earth.jpg` | Solar System Scope | CC BY 4.0 | Solar System Scope |
-|  |  |  |  |
-|  |  |  |  |
+Todas las texturas descargadas provienen de **Solar System Scope** y están bajo
+licencia **CC BY 4.0**. Se debe dar crédito así:
 
-Completar esta tabla es la forma de cumplir CC BY. Sirve también para el informe.
+> Texturas planetarias: [Solar System Scope](https://www.solarsystemscope.com/textures/),
+> licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
+| Archivo | Fuente | Licencia |
+|---------|--------|----------|
+| `planets/mercurio.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/venus.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/tierra.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/marte.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/jupiter.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/saturno.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/saturno_anillo.png` | Solar System Scope | CC BY 4.0 |
+| `planets/urano.jpg` | Solar System Scope | CC BY 4.0 |
+| `planets/neptuno.jpg` | Solar System Scope | CC BY 4.0 |
+| `moons/luna.jpg` | Solar System Scope | CC BY 4.0 |
+| `stars/sol.jpg` | Solar System Scope | CC BY 4.0 |
+| `background/fondo_estelar.jpg` | Solar System Scope | CC BY 4.0 |
 
 ---
 
-## 10. Prioridad (lo dice el PDF)
+## 10. Sonido e interface (UI): lo que VPython NO puede
+
+Importante para no descargar cosas que no se pueden usar:
+
+- **Sonido**: VPython **no reproduce audio**. Para usar sonidos habría que añadir
+  otra librería (por ejemplo `pygame.mixer`) que el proyecto todavía no tiene y
+  que no aporta a la verificación de las leyes de Kepler.
+- **UI/UX**: la interface de VPython son **controles nativos hechos con código**
+  (sliders, botones, menús, casillas), no imágenes. No hay iconos ni fondos de
+  aplicación que descargar.
+
+Por eso no se descargaron sonidos ni imágenes de interface.
+
+---
+
+## 11. Prioridad (lo dice el PDF)
 
 La sección 5.3 deja el 3D casi al final (**paso 8**): "no inviertas tiempo en 3D
 bonito antes de tener conservación de energía funcionando". Primero la física;
