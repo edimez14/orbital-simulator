@@ -66,15 +66,17 @@ orbital-simulator/
 ├── docs/
 │   ├── informe_tecnico.md
 │   ├── distribucion.md
-│   └── recursos_visuales.md
+│   ├── recursos_visuales.md
+│   └── plan_de_desarrollo.md       # plan por fases (+ su .pdf)
 ├── build_hooks/                    # hooks de PyInstaller (VPython)
 │   └── hook-vpython.py
 ├── .github/workflows/              # compila instaladores en CI
 │   └── build-installers.yml
 ├── assets/                         # recursos visuales
 │   └── textures/                   # planetas, lunas, estrellas, fondo
-├── scripts/                        # utilidades (descarga de texturas)
-│   └── descargar_texturas.sh
+├── scripts/                        # utilidades del proyecto
+│   ├── descargar_texturas.sh
+│   └── generar_pdf.py
 ├── orbital_simulator.spec          # receta del instalador
 ├── .gitignore
 ├── requirements.txt
@@ -148,6 +150,16 @@ Linux automáticamente. Detalles y decisiones en `docs/distribucion.md`.
 Los cuerpos se dibujan con primitivas de VPython (esferas, curvas, puntos); VPython
 no carga modelos 3D externos. Las texturas (ya descargadas en `assets/textures/`),
 sus licencias y cómo regenerarlas están en `docs/recursos_visuales.md`.
+
+## Plan del proyecto
+
+El desarrollo está organizado por fases en `docs/plan_de_desarrollo.md`, con su
+versión en `docs/plan_de_desarrollo.pdf`. Para regenerar el PDF desde el Markdown:
+
+```bash
+pip install -r requirements-dev.txt
+python scripts/generar_pdf.py docs/plan_de_desarrollo.md
+```
 
 ## Estado actual
 
