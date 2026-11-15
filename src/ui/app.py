@@ -512,6 +512,7 @@ def _body_card(index, data):
                 "Eliminar",
                 id={"type": "remove-body", "index": index},
                 className="remove",
+                n_clicks=0,
                 **{"aria-label": f"Eliminar el cuerpo {data['name']}"},
             )
         )
@@ -612,7 +613,7 @@ def _config_panel():
                 clearable=False,
                 className="dropdown",
             ),
-            html.Button("+ Agregar cuerpo", id="add-body", className="ghost"),
+            html.Button("+ Agregar cuerpo", id="add-body", n_clicks=0, className="ghost"),
             html.Div(id="bodies-list"),
             html.H3("4. Cálculo"),
             html.Label("Método", htmlFor="method"),
@@ -628,7 +629,7 @@ def _config_panel():
             html.Label("Duración (días)", htmlFor="total-days"),
             dcc.Input(id="total-days", type="number", value=DEFAULT_TOTAL_DAYS, min=1, className="wide"),
             html.Div("Un paso más pequeño es más preciso, pero tarda más.", className="hint"),
-            html.Button("Iniciar Simulación", id="start", className="primary"),
+            dcc.Button("Iniciar Simulación", id="start", n_clicks=0, className="primary"),
         ],
         className="panel",
     )
@@ -711,7 +712,7 @@ def _plots_panel():
             html.H3("Segunda ley (velocidad areal)"),
             dcc.Graph(id="plot-kepler", figure=_empty_figure(mensaje)),
             html.H3("Tercera ley"),
-            html.Button("Analizar 3 órbitas", id="third-law", className="ghost"),
+            html.Button("Analizar 3 órbitas", id="third-law", n_clicks=0, className="ghost"),
             html.Div(
                 "Corre tres órbitas cortas alrededor del cuerpo central. No cambia la "
                 "simulación que estás viendo.",
@@ -1127,7 +1128,10 @@ def show_velocities(bodies, index):
     State("bodies-store", "data"),
     State("history-store", "data"),
     prevent_initial_call=True,
-    running=[(Output("start", "disabled"), True, False)],
+    running=[
+        (Output("start", "disabled"), True, False),
+        (Output("start", "children"), "Calculando…", "Iniciar Simulación"),
+    ],
 )
 def update_panel(start_clicks, azimuth, elevation, zoom, selected, method, dt,
                  total_days, stored_bodies, stored_history):

@@ -179,6 +179,35 @@ def _extent(names, steps, index=None, zoom=1.0):
     return (extent * _AXIS_FACTOR / max(zoom, 0.1)) or 1.0
 
 
+def _cumulative_extents(relative, total, zoom=1.0):
+    """Mitad del encuadre para cada cuadro, calculada en una sola pasada.
+
+    Antes cada cuadro recorría todo el historial otra vez, y con 2000 muestras
+    eso hacía lenta la figura. Aquí se acumula el máximo una vez.
+
+    Recibe:
+        relative : posiciones relativas por cuerpo (índice de cuerpo -> lista).
+        total    : cuántas muestras hay.
+        zoom     : acercamiento.
+    Devuelve:
+        Lista con el encuadre de cada muestra.
+    """
+    running = [0.0] * total
+    for points in relative.values():
+        for i, point in enumerate(points[:total]):
+            value = max(abs(float(point[0])), abs(float(point[1])), abs(float(point[2])))
+            if value > running[i]:
+                running[i] = value
+
+    scale = _AXIS_FACTOR / max(zoom, 0.1)
+    extents = []
+    max_so_far = 0.0
+    for value in running:
+        max_so_far = max(max_so_far, value)
+        extents.append((max_so_far * scale) or 1.0)
+    return extents
+
+
 def _body_traces(name, x, y, extent, color, central=False):
     """Las tres trazas de un cuerpo: halo, cuerpo y brillo.
 
@@ -361,6 +390,7 @@ def orbit_animation(history, names, azimuth=_AZIMUTH, elevation=_ELEVATION, zoom
     figure = _orbit_view(names, steps, index=None, azimuth=azimuth, elevation=elevation, zoom=zoom)
 
     relative = {i: _relative_positions(steps, i) for i in range(1, len(names))}
+    extents = _cumulative_extents(relative, total, zoom)
 
     # Orden de las trazas de `_orbit_view` con la órbita completa: estrellas, tres
     # ejes, una línea por cada cuerpo que orbita y, después, los cuerpos (halo,
@@ -371,7 +401,7 @@ def orbit_animation(history, names, azimuth=_AZIMUTH, elevation=_ELEVATION, zoom
     pasos_del_cursor = []
 
     for indice in indices:
-        alcance = _extent(names, steps, indice, zoom)
+        alcance = extents[indice]
         datos = []
         trazas = []
 

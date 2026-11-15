@@ -82,8 +82,37 @@ label {
     border-color: #2b7fff;
 }
 
+/* El input sigue siendo enfocable con Tab; se oculta a la vista pero no al
+   teclado ni al lector de pantalla (tarea A39). */
 .chips input {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+    opacity: 0;
+}
+
+.chips label:focus-within {
+    outline: 2px solid #7fb0ff;
+    outline-offset: 2px;
+}
+
+/* Texto solo para lectores de pantalla. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .hint {
@@ -224,6 +253,60 @@ input[type="text"] {
 
 .field {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 0;
+}
+
+.field-label {
+    font-size: 11px;
+    color: #8fa3bf;
+}
+
+.field-input {
+    width: 100%;
+}
+
+.name-label {
+    flex: 1;
+    margin: 0;
+}
+
+.group-title {
+    font-size: 12px;
+    color: #8fa3bf;
+    margin: 10px 0 4px;
+}
+
+/* Área de estado de la corrida (tarea A34). */
+.status {
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.45;
+    border: 1px solid #1c2a44;
+    background: #12203a;
+    color: #c9d6e8;
+}
+
+.status.ok {
+    border-color: #1f7a4d;
+    background: #0f2a20;
+    color: #b6f0ce;
+}
+
+.status.warning {
+    border-color: #8a6a1f;
+    background: #2a2410;
+    color: #f5e2a8;
+}
+
+.status.error {
+    border-color: #9b2c2c;
+    background: #2a1010;
+    color: #ffc9c9;
 }
 
 .triple {
@@ -255,26 +338,63 @@ input[type="text"] {
     cursor: pointer;
 }
 
-/* Desplegable del método numérico, en oscuro. */
-.Select-control,
-.Select__control,
-.Select-menu-outer,
-.Select__menu {
+/* Desplegables de Dash 4. Los estilos heredados de versiones anteriores no
+   alcanzaban estos elementos y dejaban el control blanco con texto claro
+   (tarea A28). */
+.dash-dropdown {
+    width: 100%;
     background: #0a1120 !important;
     color: #e6edf7 !important;
-    border-color: #1c2a44 !important;
+    border: 1px solid #1c2a44 !important;
+    border-radius: 8px;
+    padding: 6px 10px;
+    text-align: left;
+    cursor: pointer;
 }
 
-.Select-value-label,
-.Select__single-value,
-.Select-input input {
+.dash-dropdown:hover,
+.dash-dropdown:focus-visible {
+    border-color: #2b7fff !important;
+    outline: 2px solid #7fb0ff;
+    outline-offset: 2px;
+}
+
+.dash-dropdown-value,
+.dash-dropdown-value-item,
+.dash-dropdown-trigger,
+.dash-dropdown-trigger-icon {
     color: #e6edf7 !important;
+    background: transparent !important;
 }
 
-.Select__menu-list,
-.Select__option {
+.dash-dropdown-options,
+.dash-options-list {
     background: #0e1626 !important;
-    color: #c9d6e8 !important;
+    color: #e6edf7 !important;
+    border: 1px solid #1c2a44 !important;
+    border-radius: 8px;
+}
+
+.dash-options-list-option {
+    background: #0e1626 !important;
+    color: #e6edf7 !important;
+    padding: 6px 10px;
+}
+
+.dash-options-list-option:hover,
+.dash-options-list-option:focus {
+    background: #16233a !important;
+    color: #ffffff !important;
+}
+
+.dash-options-list-option.selected {
+    background: #1d3a66 !important;
+    color: #ffffff !important;
+}
+
+.dash-options-list-option-text,
+.dash-options-list-option-checkbox {
+    color: #e6edf7 !important;
 }
 
 /* Pantallas medianas: dos columnas (la de gráficas pasa abajo). */
