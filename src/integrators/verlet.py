@@ -43,10 +43,17 @@ def step(bodies, dt):
     # Aceleración del instante actual, antes de mover nada.
     current_accelerations = compute_accelerations(bodies)
     previous_positions = [body.position.copy() for body in bodies]
+    half_dt_squared = 0.5 * dt * dt
 
-    # Primero se mueven TODAS las posiciones...
+    # Primero se mueven TODAS las posiciones (en el mismo arreglo, sin crear
+    # arreglos nuevos en cada paso)...
     for body, acceleration in zip(bodies, current_accelerations):
-        body.position = body.position + body.velocity * dt + 0.5 * acceleration * dt**2
+        px, py, pz = body.position
+        vx, vy, vz = body.velocity
+        ax, ay, az = acceleration
+        body.position[0] = px + vx * dt + ax * half_dt_squared
+        body.position[1] = py + vy * dt + ay * half_dt_squared
+        body.position[2] = pz + vz * dt + az * half_dt_squared
 
     # ...y solo entonces se recalculan las aceleraciones con las posiciones nuevas.
     new_accelerations = compute_accelerations(bodies)
@@ -56,6 +63,9 @@ def step(bodies, dt):
     for body, acceleration, new_acceleration, previous in zip(
         bodies, current_accelerations, new_accelerations, previous_positions
     ):
-        body.velocity = body.velocity + 0.5 * (acceleration + new_acceleration) * dt
+        vx, vy, vz = body.velocity
+        body.velocity[0] = vx + 0.5 * (acceleration[0] + new_acceleration[0]) * dt
+        body.velocity[1] = vy + 0.5 * (acceleration[1] + new_acceleration[1]) * dt
+        body.velocity[2] = vz + 0.5 * (acceleration[2] + new_acceleration[2]) * dt
         body.acceleration = new_acceleration
         body.previous_position = previous

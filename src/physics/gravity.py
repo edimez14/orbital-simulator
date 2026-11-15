@@ -14,7 +14,7 @@
     mano con un caso simple (por ejemplo Sol-Tierra).
 
 ¿Qué contendrá?
-    - `G` : constante de gravitación, igual a 4π² en las unidades del proyecto.
+    - `G` : constante de gravitación, 6.674e-11 m³·kg⁻¹·s⁻² en unidades SI.
     - `compute_accelerations(bodies)` : aceleración de cada cuerpo por el resto.
 
 Unidades (SI)
@@ -36,6 +36,8 @@ Riesgo (PDF Fase 3)
 ¿Cómo modificarlo?
     No hay nada que cambiar todavía. Para otra fuerza, crear un archivo nuevo.
 """
+
+import math
 
 import numpy as np
 
@@ -68,16 +70,36 @@ def compute_accelerations(bodies):
         Un arreglo con una aceleración (tres números) por cada cuerpo, en el
         mismo orden en que llegan.
     """
-    accelerations = np.zeros((len(bodies), 3))
+    # Se trabaja con números sueltos: para pocos cuerpos es más rápido que
+    # crear arreglos en cada paso y el resultado es el mismo.
+    count = len(bodies)
+    accelerations = [[0.0, 0.0, 0.0] for _ in range(count)]
 
-    for i, body_i in enumerate(bodies):
-        for j, body_j in enumerate(bodies):
-            if i == j:
-                continue
-            separation = body_j.position - body_i.position
-            distance = np.linalg.norm(separation)
+    for i in range(count):
+        body_i = bodies[i]
+        xi = float(body_i.position[0])
+        yi = float(body_i.position[1])
+        zi = float(body_i.position[2])
+        for j in range(i + 1, count):
+            body_j = bodies[j]
+            dx = float(body_j.position[0]) - xi
+            dy = float(body_j.position[1]) - yi
+            dz = float(body_j.position[2]) - zi
+
+            distance = math.sqrt(dx * dx + dy * dy + dz * dz)
             if distance < MIN_DISTANCE:
                 distance = MIN_DISTANCE
-            accelerations[i] += G * body_j.mass * separation / distance**3
+            factor = G / (distance * distance * distance)
 
-    return accelerations
+            # Cada cuerpo acelera hacia el otro, con la masa del otro.
+            first = factor * float(body_j.mass)
+            accelerations[i][0] += first * dx
+            accelerations[i][1] += first * dy
+            accelerations[i][2] += first * dz
+
+            second = factor * float(body_i.mass)
+            accelerations[j][0] -= second * dx
+            accelerations[j][1] -= second * dy
+            accelerations[j][2] -= second * dz
+
+    return np.array(accelerations)

@@ -35,15 +35,17 @@ def step(bodies, dt):
 
     Recibe:
         bodies : lista de cuerpos (masa, posición y velocidad actuales).
-        dt     : cuánto avanza el tiempo en este paso, en años.
+        dt     : cuánto avanza el tiempo en este paso, en segundos.
     """
     accelerations = compute_accelerations(bodies)
 
     # Primero las velocidades, con la aceleración del instante actual.
     for body, acceleration in zip(bodies, accelerations):
         body.acceleration = acceleration
-        body.velocity = body.velocity + acceleration * dt
+        for axis in range(3):
+            body.velocity[axis] += acceleration[axis] * dt
 
     # Después las posiciones, con la velocidad ya actualizada.
     for body in bodies:
-        body.position = body.position + body.velocity * dt
+        for axis in range(3):
+            body.position[axis] += body.velocity[axis] * dt
