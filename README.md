@@ -56,15 +56,20 @@ El uso paso a paso está en `docs/manual_de_usuario.md`.
 
 ## Qué se puede hacer en el panel
 
-- **Elegir el tipo de trayectoria**: circular, elíptica o hiperbólica (ajusta la
-  velocidad del cuerpo que orbita).
+- **Elegir el tipo de trayectoria**: circular, elíptica, parabólica o hiperbólica
+  (ajusta la velocidad del cuerpo que orbita). La clasificación que se muestra sale
+  de la energía y la excentricidad del estado real.
 - **Editar los cuerpos**: nombre, masa, posición y velocidad; agregar y eliminar.
 - **Elegir el método numérico**: Euler-Cromer o Verlet.
 - **Ajustar** el paso de tiempo y el tiempo total.
 - Ver la **velocidad circular y la de escape** mientras se edita.
 - Ver la **vista 3D**, la trayectoria 2D, la energía (total, cinética y potencial),
-  el momento angular y la verificación de Kepler.
-- Leer las **tarjetas de resultados** y la **tabla de datos**.
+  el momento angular, la segunda ley (velocidad areal) y la primera ley.
+- Elegir el **cuerpo analizado**: tarjetas, tabla y leyes hablan del mismo cuerpo.
+- Analizar la **tercera ley** con tres órbitas cortas, solo cuando se pide.
+- Leer el **estado del cálculo**: validación, errores y conservación medida.
+- Leer las **tarjetas de resultados** y la **tabla de datos** (40 filas como máximo,
+  con el primer y el último instante).
 
 ## Pruebas
 
@@ -84,12 +89,14 @@ orbital-simulator/
 │   ├── physics/       ¿cómo interactúan los cuerpos?
 │   │   ├── bodies.py
 │   │   ├── gravity.py
-│   │   └── conservation.py
+│   │   ├── conservation.py
+│   │   └── validation.py  revisa los datos antes de calcular
 │   ├── integrators/   ¿cómo avanza el tiempo?
 │   │   ├── euler_cromer.py
 │   │   └── verlet.py
 │   ├── kepler/        ¿se cumplen las leyes?
-│   │   └── kepler_laws.py
+│   │   ├── kepler_laws.py
+│   │   └── orbit_analysis.py  tercera ley con tres órbitas medidas
 │   ├── simulation.py  motor: corre el loop y arma el historial
 │   ├── ui/            interfaz web
 │   │   ├── app.py         panel (Dash)
@@ -102,7 +109,7 @@ orbital-simulator/
 ├── tests/             pruebas unitarias y de escenarios
 ├── data/presets.json  escenarios con datos reales
 ├── docs/              informe, guías, plan y tareas
-├── assets/            estilo del panel y texturas
+├── assets/            estilo del panel, mejora de teclado y texturas
 └── requirements.txt / requirements-dev.txt
 ```
 
@@ -116,14 +123,20 @@ orbital-simulator/
 
 ## Estado actual
 
-Hechas las tareas 1 a 10 de `docs/tareas_cambios.md` (física en SI, datos reales,
-motor con métodos, historial, panel, vista 3D, gráficas, edición de cuerpos, tipos de
-trayectoria y resultados). Quedan la documentación fina (tarea 11) y el empaquetado
-(tarea 12).
+Hechas las tareas 1 a 27 de `docs/tareas_cambios.md`, salvo la **tarea 12
+(empaquetado)**, que sigue en pausa hasta que el usuario lo pida.
+
+Del plan de corrección `docs/auditoria_y_plan_de_correccion.md` están hechas las
+tareas A01 a A37, A39 y A40. La tarea **A38 (validar el empaquetado)** sigue en
+pausa con la tarea 12. La suite tiene **114 pruebas** y se ejecuta con:
+
+```bash
+.venv/bin/python -m pytest -q
+```
 
 Los módulos de la etapa VPython (`render/scene3d.py` y el `Controls` de
 `ui/controls.py`) quedan por retirar; `ui/controls.py` todavía aporta
-`escape_velocity`, que usa la interfaz.
+`escape_velocity`, que usa la interfaz. Su retirada necesita una tarea aprobada.
 
 ## Cómo modificar el proyecto
 

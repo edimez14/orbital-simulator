@@ -59,7 +59,7 @@ def plot_energy(history, output_path=None):
 
     figure, axes = plt.subplots()
     axes.plot(history["time"], variation)
-    axes.set_xlabel("Tiempo (años)")
+    axes.set_xlabel("Tiempo (s)")
     axes.set_ylabel("Variación de energía (%)")
     axes.set_title("Conservación de la energía")
     _save(figure, output_path)
@@ -80,7 +80,7 @@ def plot_angular_momentum(history, output_path=None):
 
     figure, axes = plt.subplots()
     axes.plot(history["time"], variation)
-    axes.set_xlabel("Tiempo (años)")
+    axes.set_xlabel("Tiempo (s)")
     axes.set_ylabel("Variación de momento angular (%)")
     axes.set_title("Conservación del momento angular")
     _save(figure, output_path)
@@ -91,16 +91,16 @@ def plot_swept_area(times, areas, output_path=None):
     """Gráfica del área barrida por el radio vector contra el tiempo.
 
     Recibe:
-        times       : tiempos medidos (en años).
-        areas       : áreas barridas en cada intervalo (en AU²).
+        times       : tiempos medidos (en s).
+        areas       : áreas barridas en cada intervalo (en m²).
         output_path : ruta donde guardar la figura (opcional).
     Devuelve:
         La figura de Matplotlib.
     """
     figure, axes = plt.subplots()
     axes.plot(times, areas)
-    axes.set_xlabel("Tiempo (años)")
-    axes.set_ylabel("Área barrida (AU²)")
+    axes.set_xlabel("Tiempo (s)")
+    axes.set_ylabel("Área barrida (m²)")
     axes.set_title("Segunda ley de Kepler")
     _save(figure, output_path)
     return figure
@@ -110,16 +110,16 @@ def plot_third_law(semi_major_axes, periods, output_path=None):
     """Gráfica de T² contra a³ para varias órbitas alrededor del mismo cuerpo.
 
     Recibe:
-        semi_major_axes : semiejes mayores (en AU).
-        periods         : periodos correspondientes (en años).
+        semi_major_axes : semiejes mayores (en m).
+        periods         : periodos correspondientes (en s).
         output_path     : ruta donde guardar la figura (opcional).
     Devuelve:
         La figura de Matplotlib.
     """
     figure, axes = plt.subplots()
     axes.plot([a**3 for a in semi_major_axes], [t**2 for t in periods], "o")
-    axes.set_xlabel("a³ (AU³)")
-    axes.set_ylabel("T² (años²)")
+    axes.set_xlabel("a³ (m³)")
+    axes.set_ylabel("T² (s²)")
     axes.set_title("Tercera ley de Kepler")
     _save(figure, output_path)
     return figure

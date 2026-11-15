@@ -35,7 +35,8 @@ que parece necesario pero el plan no lo pide, lo propongo al usuario y espero su
 decisión. No lo implemento por iniciativa propia.
 
 ## Regla 6 — No cambies las convenciones existentes
-Las unidades (distancia en AU, masa en masas solares, tiempo en años), los nombres
+Las unidades vigentes (distancia en metros, masa en kilogramos, tiempo en segundos;
+la interfaz muestra el tiempo en días), los nombres
 de funciones y la organización de carpetas son del proyecto. Si algo está mal
 planteado, se lo señalo y espero una decisión del usuario. No los arreglo yo solo.
 

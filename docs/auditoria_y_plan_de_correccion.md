@@ -33,7 +33,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A01 — Reconciliar el documento rector
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** AGENTS.md; docs/plan_de_desarrollo.md; docs/tareas_cambios.md; README.md.
 - **Hallazgo y reproducción:** Confirmado por lectura: AGENTS exige AU/masas solares/años y el plan conserva esas unidades en su cuerpo; la cabecera y tareas confirmadas establecen SI/Dash. README dice que falta tarea 11, pero tareas_cambios la marca terminada.
@@ -43,7 +43,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A02 — Validar los datos de cada cuerpo
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/ui/app.py:dict_to_body, set_body_field, build_panel; src/physics/bodies.py.
 - **Hallazgo y reproducción:** Masa None provoca TypeError; masa negativa se integra. Los campos admiten borrado y no tienen validación física central.
@@ -53,7 +53,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A03 — Tratar la ausencia de cuerpos secundarios
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/ui/app.py:build_panel; src/ui/figures.py:kepler_figure.
 - **Hallazgo y reproducción:** Eliminar el único secundario y pulsar iniciar causa HTTP 500 e IndexError confirmado en navegador.
@@ -63,7 +63,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A04 — Definir la duración alcanzable con dt
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/simulation.py:total_steps; src/ui/app.py:build_panel.
 - **Hallazgo y reproducción:** round(total_time/dt) puede dar cero pasos; con dt=200000 s y duración=1 día el panel falla. Un solo registro también rompe kepler_figure al leer time[1].
@@ -73,7 +73,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A05 — Rechazar condiciones iniciales superpuestas
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/ui/app.py:add_body_to, build_panel; src/physics/conservation.py:potential_energy.
 - **Hallazgo y reproducción:** NEW_BODY comparte posición con la Luna del preset; con velocidades iguales la energía permanece -inf. MIN_DISTANCE en gravedad no protege el potencial.
@@ -83,7 +83,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A06 — Hacer coherente el tratamiento de encuentros cercanos
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/physics/gravity.py:MIN_DISTANCE, compute_accelerations; src/physics/conservation.py:potential_energy.
 - **Hallazgo y reproducción:** Gravedad limita el denominador a 1 m, pero energía usa 1/r sin límite; el modelo de fuerza y el potencial no son coherentes bajo ese umbral.
@@ -93,7 +93,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A07 — Validar el contrato de entrada del motor
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/simulation.py:run_simulation, total_steps.
 - **Hallazgo y reproducción:** No hay guardas de steps, record_every, método ni lista de cuerpos; record_every=0 divide por cero, método desconocido da KeyError.
@@ -103,7 +103,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A08 — Limitar el coste de una solicitud
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P0.
 - **Archivos y punto de entrada:** src/ui/app.py:build_panel; src/simulation.py:run_simulation.
 - **Hallazgo y reproducción:** Confirmado por código: reducir registros no limita iteraciones; duración sin máximo y dt pequeño permiten una petición de coste arbitrario, agravada por pares de cuerpos. No se ejecutó una carga extrema.
@@ -113,7 +113,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A09 — Guardar el estado final real
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/simulation.py:run_simulation.
 - **Hallazgo y reproducción:** El historial se guarda antes de avanzar y nunca después del último paso: 100 pasos de 60 s con muestreo 30 terminan visualmente en 5400 s.
@@ -123,7 +123,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A10 — Garantizar el máximo de registros
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:build_panel, MAX_RECORDS.
 - **Hallazgo y reproducción:** 43200 pasos / 2000 usa división entera 21 y guarda 2058 registros.
@@ -133,7 +133,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A11 — Implementar un Verlet distinto de Euler-Cromer
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/integrators/verlet.py; tests/test_integrators.py.
 - **Hallazgo y reproducción:** El archivo reconoce que su arranque Euler-Cromer y velocidad por diferencia hacia atrás reproducen Euler-Cromer. La prueba exige igualdad, sin comprobar orden dos.
@@ -143,7 +143,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A12 — Definir el error con referencia cero
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/physics/conservation.py:relative_error.
 - **Hallazgo y reproducción:** relative_error(1.0,0.0) produce ZeroDivisionError; E≈0 es precisamente relevante cerca de escape y L=0 en movimiento radial.
@@ -153,7 +153,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A13 — Calcular velocidades orbitales con las dos masas
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:circular_speed, trajectory_speed, apply_speed, velocities_text.
 - **Hallazgo y reproducción:** Tierra–Luna Circular tiene e=0.0121447 y Parabólica e=0.975711 con el mu real; usar solo M no coincide con la integración que mueve ambos cuerpos.
@@ -163,7 +163,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A14 — Usar las tres dimensiones en los controles orbitales
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:apply_speed, velocities_text.
 - **Hallazgo y reproducción:** hypot(dx,dy) ignora z y rapidez ignora vz. Un secundario sobre el eje z muestra distancia inválida pese a estar a 384400000 m.
@@ -173,7 +173,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A15 — Clasificar la órbita a partir del estado físico
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:orbit_kind, velocities_text.
 - **Hallazgo y reproducción:** Clasificación usa solo factor de rapidez y bandas ±0.02: una velocidad radial de magnitud vc se llama circular y estados próximos a escape se llaman parabólicos aunque ligados.
@@ -183,7 +183,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A16 — Sincronizar el selector con el escenario cargado
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:update_bodies, set_speed_for_type.
 - **Hallazgo y reproducción:** Navegador: elegir Hiperbólica y después Sol–Tierra deja Hiperbólica y factor 1.697 seleccionados, mientras el texto dice ahora 1.00 Circular.
@@ -193,7 +193,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A17 — Sincronizar los controles después de editar velocidades
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:update_bodies y callbacks del tipo/velocidad.
 - **Hallazgo y reproducción:** Los campos actualizan bodies-store pero no actualizan el selector ni factor. El deslizador cambia velocidad pero no el tipo marcado. Confirmado por conexiones del código.
@@ -203,7 +203,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A18 — Unificar el cuerpo secundario que se analiza
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:results_cards, table_rows, apply_speed; src/ui/figures.py:kepler_figure.
 - **Hallazgo y reproducción:** Velocidad y Kepler usan índice 1; tarjetas y tabla usan índice -1. En sistema interno son Mercurio frente a Marte.
@@ -213,7 +213,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A19 — Identificar el sistema de referencia de los resultados
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:results_cards, table_rows; src/ui/figures.py:_relative_positions.
 - **Hallazgo y reproducción:** Figuras son relativas al primario; tarjetas y tabla contienen coordenadas absolutas sin decirlo. El primario sí se mueve por gravedad.
@@ -223,7 +223,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A20 — Rotular las magnitudes globales del sistema
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:results_cards y _center_panel.
 - **Hallazgo y reproducción:** Energía y L son sumas del sistema, pero aparecen bajo Resultados del cuerpo que gira.
@@ -233,7 +233,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A21 — Medir conservación sin perder máximos entre muestras
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/simulation.py:run_simulation; src/ui/app.py; src/physics/conservation.py.
 - **Hallazgo y reproducción:** Solo hay curvas absolutas, sin diagnóstico de la meta 1 %. El historial reducido no garantiza capturar el peor error.
@@ -243,7 +243,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A22 — Verificar realmente la primera ley
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/kepler/kepler_laws.py:check_first_law.
 - **Hallazgo y reproducción:** Tomar mínimo/máximo radial no prueba elipse ni cierre; cualquier segmento hiperbólico produce e<1 con esa fórmula.
@@ -253,7 +253,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A23 — Presentar la primera ley en la página
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:_plots_panel, build_panel.
 - **Hallazgo y reproducción:** La página solo grafica áreas de la segunda ley; no presenta validación de primera ley.
@@ -263,7 +263,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A24 — Validar la segunda ley con tiempos reales
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/figures.py:kepler_figure; src/kepler/kepler_laws.py:check_second_law.
 - **Hallazgo y reproducción:** Se supone dt=time[1]-time[0] y se grafica área triangular sin porcentaje ni conclusión. Muestrear saltos largos introduce error geométrico; añadir final puede crear intervalo desigual.
@@ -273,7 +273,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A25 — Medir periodos a partir de trayectorias
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/kepler/kepler_laws.py; tests/test_kepler.py.
 - **Hallazgo y reproducción:** No hay medición pública de periodos: solo un auxiliar de pruebas que busca regreso a una posición absoluta.
@@ -283,7 +283,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A26 — Validar la tercera ley con datos medidos
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/kepler/kepler_laws.py:check_third_law.
 - **Hallazgo y reproducción:** Actualmente solo devuelve divisiones T²/a³, sin validar cobertura, datos ni error teórico.
@@ -293,7 +293,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A27 — Mostrar T² frente a a³ en la interfaz
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:_plots_panel; src/ui/figures.py.
 - **Hallazgo y reproducción:** El gráfico solicitado en fase 7 no existe en Dash. No bastan constantes comprobadas solo en tests.
@@ -303,7 +303,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A28 — Corregir contraste de los desplegables
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P2.
 - **Archivos y punto de entrada:** assets/style.css:259; componentes scenario y method.
 - **Hallazgo y reproducción:** Confirmado en capturas: selector y método tienen fondo blanco y texto casi blanco. Los selectores CSS heredados .Select no cubren todos los elementos de Dash instalado.
@@ -313,7 +313,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A29 — Verificar y corregir la distribución responsive
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P2.
 - **Archivos y punto de entrada:** assets/style.css:.grid, .triple, .body-head, .controls; src/ui/figures.py:_base_layout.
 - **Hallazgo y reproducción:** Pendiente de verificación completa. Capturas estrechas muestran apilado; las pruebas actuales solo buscan @media en el texto. Tres columnas mínimas pueden dejar poco ancho al centro cerca de 1150 px.
@@ -323,7 +323,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A30 — Mantener el brillo pegado al cuerpo
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P2.
 - **Archivos y punto de entrada:** src/ui/figures.py:_body_traces.
 - **Hallazgo y reproducción:** Confirmado por geometría: el cuerpo tiene tamaño en píxeles, pero brillo se desplaza 0.05*extent en unidades de datos. Su separación cambia con cámara/zoom y puede quedar fuera del disco.
@@ -333,7 +333,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A31 — Conservar el último punto al muestrear la animación
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:animation_from; src/ui/figures.py:orbit_animation.
 - **Hallazgo y reproducción:** animation_from usa range con salto y puede omitir el último registro. La cámara después usa ese historial reducido; su final puede diferir de las tarjetas.
@@ -343,7 +343,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A32 — Implementar reinicio explícito de la animación
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/figures.py:orbit_animation; docs/tareas_cambios.md:tarea 21.
 - **Hallazgo y reproducción:** Se ofrecen Reproducir y Pausar; no hay botón Reiniciar aunque tarea 21 lo exige. No se certificó continuidad exacta de reproducción.
@@ -353,7 +353,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A33 — Respetar el máximo de filas de la tabla
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:table_rows.
 - **Hallazgo y reproducción:** Para 100 registros, salto=100//40=2 produce 50 filas. También puede omitir final y redondea tiempos a dos decimales, colapsando instantes próximos.
@@ -363,7 +363,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A34 — Mostrar fallos y estado de cálculo de manera visible
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** src/ui/app.py:update_panel, build_panel, build_layout.
 - **Hallazgo y reproducción:** Un cuerpo causa HTTP 500 sin explicación; validaciones parciales devuelven figuras vacías con Pulsa Iniciar, que no explica el rechazo. No hay estado explícito de cálculo.
@@ -373,7 +373,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A35 — Cerrar la revisión funcional en navegador
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** tests/test_app.py; docs/manual_de_usuario.md; interfaz completa.
 - **Hallazgo y reproducción:** Pendiente: las pruebas actuales llaman helpers y comparan cadenas; no verifican callbacks reales, accesibilidad, herramientas Plotly ni todas las secuencias de usuario.
@@ -383,7 +383,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A36 — Actualizar la documentación con resultados comprobados
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P2.
 - **Archivos y punto de entrada:** docs/informe_tecnico.md; README.md; docs/manual_de_usuario.md; comentarios de gravity.py, kepler_laws.py e integradores.
 - **Hallazgo y reproducción:** Informe mantiene resultados/conclusiones pendientes; comentarios aún dicen AU²/años/G=4pi². Fórmulas del informe dividen entre referencia negativa sin absoluto.
@@ -393,7 +393,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A37 — Registrar un entorno reproducible compatible
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P2.
 - **Archivos y punto de entrada:** requirements.txt; requirements-dev.txt.
 - **Hallazgo y reproducción:** Paquetes no tienen restricciones aunque comentario afirma versiones mínimas. Instalación auditada emite avisos de DataTable y VPython; estilos ya presentan incompatibilidad.
@@ -403,7 +403,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A38 — Validar el empaquetado cuando el usuario lo reactive
 
-- [ ] Pendiente de aprobación y ejecución.
+- [ ] **En pausa:** el empaquetado sigue detenido por decisión del usuario. No se compiló nada.
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** orbital_simulator.spec; src/main.py; .github/workflows/build-installers.yml; docs/distribucion.md.
 - **Hallazgo y reproducción:** Pendiente, no compilado. Lanzador solo hace app.run: no abre navegador como promete distribución. Workflow compila sin ejecutar pytest. No hay prueba del paquete fuera del repositorio.
@@ -614,7 +614,7 @@ Las mediciones N49 corresponden a atributos SVG de los puntos realmente dibujado
 
 ### A39 — Hacer accesibles por teclado los tipos de órbita
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos:** assets/style.css, regla `.chips input`; src/ui/app.py, `trajectory-type`.
 - **Evidencia:** N77: Tab desde escenario lleva a rapidez; los inputs de las opciones se ocultan con `display: none`.
@@ -624,7 +624,7 @@ Las mediciones N49 corresponden a atributos SVG de los puntos realmente dibujado
 
 ### A40 — Asociar cada etiqueta con su campo
 
-- [ ] Pendiente de aprobación y ejecución.
+- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
 - **Prioridad:** P1.
 - **Archivos:** src/ui/app.py, `_body_field`, `_body_card`, `_config_panel`, `_center_panel`; botones de paginación si su API permite rotularlos.
 - **Evidencia:** N78: 25 de 29 labels inspeccionados no tienen asociación mediante htmlFor/input contenido. Los botones de paginación aparecen sin nombre accesible en el árbol.
@@ -673,3 +673,85 @@ Pruebas solicitadas expresamente por el usuario, realizadas en el navegador el 1
 **Resultado:** sí funcionan agregar un cuerpo personalizado, editarlo, ejecutarlo, eliminar un cuerpo intermedio y seguir editando el restante. Eso no elimina los fallos de superposición por defecto, validación de campos y ambigüedad del cuerpo analizado registrados antes. No se declara precisión física de una órbita arbitraria solo porque haya producido resultados finitos.
 
 Evidencia visual temporal: `/tmp/orbital_cuerpos_prueba.jpg`. No se implementó ninguna corrección ni se marcaron tareas como completadas.
+
+## Registro de ejecución (14 de noviembre de 2026)
+
+Ejecución automática autorizada por el usuario. Cada fila indica la comprobación
+real que se corrió, no solo la presencia de código. Comando base de toda la
+suite: `PYTHONDONTWRITEBYTECODE=1 .venv/bin/python -m pytest -p no:cacheprovider -q`
+→ **114 pruebas aprobadas** (antes: 52).
+
+| Tarea | Cambio principal | Comprobación ejecutada | Resultado |
+|---|---|---|---|
+| A01 | Unidades SI y Dash en AGENTS, plan y README; estado del plan reconciliado | Lectura de los tres documentos | Sin instrucciones contradictorias |
+| A02 | `physics/validation.py` valida nombre, masa y componentes | `tests/test_validation.py`; panel con masa vacía, cero, negativa y NaN | Rechazo con cuerpo y campo |
+| A03 | Iniciar con un solo cuerpo devuelve mensaje, no HTTP 500 | `test_el_panel_rechaza_un_solo_cuerpo` y navegador | Mensaje visible y recuperación |
+| A04 | `step_plan`: último paso acortado; figuras toleran una muestra | `test_duracion_no_divisible...`, `build_panel` con dt=200000 s | Tiempo final exacto, sin IndexError |
+| A05 | Detección de pares superpuestos antes de integrar; cuerpo nuevo separado | `test_el_panel_rechaza_cuerpos_superpuestos` | Nombra el par y no integra |
+| A06 | La corrida se detiene bajo `MIN_DISTANCE` con causa y tiempo | `test_un_encuentro_cercano_detiene_la_corrida` | `stopped` con tiempo y par |
+| A07 | Contrato del motor: dt, steps, record_every, método y cuerpos | 7 casos parametrizados en `test_simulation.py` | `ValueError` descriptivo |
+| A08 | Presupuesto `MAX_WORK` y `MAX_STEPS` antes del bucle | `test_el_presupuesto_de_trabajo_rechaza_antes_de_integrar` | Rechazo con costo calculado |
+| A09 | Se guarda el estado inicial y el final real | `test_el_ultimo_registro_coincide_con_el_estado_final` | 6000 s con 100 pasos de 60 s |
+| A10 | `sample_indices` limita registros y conserva extremos | `test_el_presupuesto_de_registros...`, 1/39/40/41/100/2058 | Nunca supera el máximo |
+| A11 | Velocity-Verlet real (dos aceleraciones) | Orden dos y comparación de energía en `test_integrators.py` | Error cae ~4 al mitad de dt |
+| A12 | `relative_error` devuelve `None` sin referencia; `error_report` | `test_una_referencia_cero...` | "No evaluable" + error absoluto |
+| A13 | `mu = G·(M+m)` en velocidad circular y de escape | `test_la_velocidad_circular_usa_las_dos_masas` | Circular Tierra–Luna e = 0,0049 |
+| A14 | Normas y tangente en 3D | `test_las_velocidades_usan_las_tres_dimensiones` | Órbita sobre z válida |
+| A15 | Clasificación por energía y excentricidad | `test_la_clasificacion_usa_energia_y_excentricidad`; radial | Radial no se llama circular |
+| A16 | El tipo y la velocidad se sincronizan con los cuerpos | Navegador: cargar preset tras Hiperbólica | Controles y texto coinciden |
+| A17 | Editar un campo no reescribe la velocidad manual | Guardas de igualdad en los callbacks; navegador | Ediciones se conservan |
+| A18 | Selector explícito de cuerpo analizado con identidad numérica | `test_el_selector_de_cuerpo...`, `test_las_vistas_de_detalle...` | Tarjetas, tabla y leyes coinciden |
+| A19 | Se rotula el marco absoluto de tarjetas y tabla | Texto del panel y encabezados | Usuario distingue marcos |
+| A20 | E y L rotulados como totales del sistema | `results_cards` | Sin atribuirlos a un planeta |
+| A21 | Máximos de ΔE y ΔL en cada paso, independientes del historial | `test_la_conservacion_se_mide_en_cada_paso...` | Igual con 500 o 10 muestras |
+| A22 | Ajuste de elipse con cobertura y residuo | `test_primera_ley`, arco corto e hipérbola | Certifica solo con evidencia |
+| A23 | Primera ley visible en el panel | Navegador: a, e, cobertura y residuo | Texto con unidades |
+| A24 | Segunda ley con tiempos reales y velocidad areal | `test_segunda_ley_usa_los_tiempos_reales` | Muestreo desigual no altera |
+| A25 | Periodo medido por cruce de una vuelta | `test_el_periodo_se_mide_de_la_trayectoria` | Error < 1 % |
+| A26 | Tercera ley con periodos y semiejes medidos | `test_tercera_ley_con_tres_orbitas_medidas` | Error 0,0009 % |
+| A27 | Botón "Analizar 3 órbitas" y gráfica T² vs a³ | Navegador | Tres puntos y referencia teórica |
+| A28 | Contraste de desplegables de Dash 4 | Medición de estilos en navegador | 16:1 y 15,3:1 (meta 4,5:1) |
+| A29 | Distribución responsive medida en 390–1440 px | Navegador: `scrollWidth == innerWidth` | Sin desborde general |
+| A30 | Brillo en la misma posición del cuerpo | `test_el_brillo_queda_en_la_misma_posicion...` | No se separa con zoom |
+| A31 | Animación conserva primera y última muestra | `test_la_animacion_conserva...` (100/241/1000/2058) | Extremos exactos |
+| A32 | Botón Reiniciar en la animación | `test_la_animacion_trae_cuadros_y_tres_botones`; navegador | Vuelve al cuadro 0 |
+| A33 | Tabla: máximo 40 filas, extremos y tiempo sin redondear | `test_la_tabla_respeta...`, `test_la_tabla_no_confunde...` | Última fila = tarjetas |
+| A34 | Estado visible, "Calculando…", errores explicados | Navegador: cálculo, un cuerpo, fallo y recuperación | Sin HTTP 500 silencioso |
+| A35 | Matriz funcional en navegador (subconjunto ejecutado) | Ver sección siguiente | Casos ejecutados y pendientes |
+| A36 | Informe con corridas reproducibles y comentarios en SI | `docs/informe_tecnico.md`; `pytest` | Tablas con parámetros escritos |
+| A37 | Versiones auditadas fijadas | `requirements.txt` y `requirements-dev.txt` | Instalación reproducible |
+| A38 | Empaquetado | No ejecutado | En pausa por decisión del usuario |
+| A39 | Chips de órbita accesibles por teclado | CSS `sr-only` + `focus-within`; Tab en navegador | Foco visible y grupo alcanzable |
+| A40 | Etiquetas asociadas a cada campo | 29 etiquetas inspeccionadas, todas con control | Nombre incluye cuerpo y unidad |
+
+### Matriz A35: casos ejecutados en navegador
+
+Se usó Chromium 156 (Chrome for Testing) contra la aplicación real en
+`http://127.0.0.1:8066`. Las acciones se hicieron sobre la página, no con ayudas
+de Python. Esta tabla separa lo observado de lo pendiente para no declarar como
+probado lo que solo cubre una prueba automática.
+
+| Caso | Acción | Resultado observado |
+|---|---|---|
+| M01 | Abrir página nueva | Carga sin errores; controles y gráficas iniciales |
+| M02 | Tierra–Luna, 30 días, dt=60 s | Tarjetas, tabla, primera ley y conservación visibles |
+| M03 | Cambiar el escenario | Se cargan los cuerpos del preset elegido |
+| M20 | Agregar un cuerpo | Aparece una tarjeta nueva sin borrar las anteriores |
+| M22 | Eliminar todos los secundarios e iniciar | Mensaje "Se necesitan al menos dos cuerpos…" |
+| M46 | Recorrido con Tab | El grupo de tipos de órbita recibe foco visible |
+| M47 | Inspección de etiquetas | 29 de 29 etiquetas contienen su control |
+| M48 | Anchos 390, 780, 1024, 1150, 1280 y 1440 px | `scrollWidth == innerWidth`; sin desborde general |
+
+Casos cubiertos por pruebas automáticas, **no repetidos en navegador**:
+M05, M06, M07–M10, M23–M26, M28–M31 (ver `tests/`). Casos **pendientes** en
+navegador: M04, M11–M19, M21, M27, M32–M45, M49–M56 y lector de pantalla real.
+No se declaran aprobados.
+
+### Nota sobre el arranque de la simulación
+
+Durante la ejecución se encontró que la corrida de 30 días tardaba unos 34 s
+porque la conservación se calculaba con NumPy en cada paso. Se cambió el cálculo
+interno a operaciones escalares y se precomputó el encuadre de la animación. La
+misma corrida tarda ahora alrededor de 4 s y el botón muestra "Calculando…"
+mientras trabaja.
+

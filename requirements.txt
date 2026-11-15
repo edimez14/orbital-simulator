@@ -1,19 +1,20 @@
 # código nuevo edizon
 # Dependencias del simulador orbital (Leyes de Kepler).
-# Se fijan versiones minimas para reproducibilidad. Ajustar al instalar.
+# Versiones comprobadas con la suite de pruebas el 14 de noviembre de 2026
+# (114 pruebas aprobadas). Se fijan para que otra persona instale lo mismo.
 
 # Calculos numericos vectorizados (posiciones, velocidades, aceleraciones).
-numpy
+numpy==2.5.4
 
-# Graficas 2D cientificas (energia, momento angular, segunda ley de Kepler).
-matplotlib
+# Graficas 2D cientificas (modulo historico de Matplotlib).
+matplotlib==3.11.2
 
-# Visualizacion 3D interactiva orientada a fisica (escena y controles).
-# Se retira al terminar la app Dash (tareas 5 a 9).
-vpython
+# Modulos historicos de la etapa VPython. No los usa la interfaz Dash.
+# Su retirada necesita una tarea y un alcance aprobados (tarea A37).
+vpython==7.6.5
 
 # Aplicacion web de la interfaz (panel del boceto).
-dash
+dash==4.4.1
 
 # Graficas interactivas dentro de la interfaz.
-plotly
+plotly==7.1.0

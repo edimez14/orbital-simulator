@@ -2,20 +2,21 @@
 # ---------------------------------------------------------------------------
 # Dependencias de desarrollo y pruebas (unitarias y de escenarios).
 # Instalar con:  pip install -r requirements-dev.txt
+# Versiones comprobadas el 14 de noviembre de 2026.
 # ---------------------------------------------------------------------------
 
-# Dependencias del simulador (numpy, matplotlib, vpython).
+# Dependencias del simulador (numpy, matplotlib, vpython, dash, plotly).
 -r requirements.txt
 
 # Framework de pruebas: unitarias y de escenarios parametrizados.
-pytest
+pytest==9.1.1
 
 # Medicion de cobertura de pruebas.
-pytest-cov
+pytest-cov==7.1.0
 
 # Empaquetado del instalador/ejecutable (ver docs/distribucion.md).
-pyinstaller
+pyinstaller==6.22.3
 
 # Generacion de PDF desde Markdown (ver scripts/generar_pdf.py).
-fpdf2
-markdown
+fpdf2==2.8.9
+markdown==3.11.1

@@ -51,10 +51,12 @@ Se marcan para poder corregirlos si no aplican:
 
 1. El alcance es el del PDF del pre-proyecto (simulador educativo, dos o más
    cuerpos, verificación de Kepler).
-2. Se usa una sola convención de unidades internas: **AU** (distancia),
-   **masas solares** (masa) y **años** (tiempo). Con eso, la constante
-   gravitacional vale **G = 4π²**.
-3. El visualizador 3D es **VPython** (ya elegido).
+2. Se usa una sola convención de unidades internas: **SI** (m, kg, s), con el
+   tiempo de la interfaz en días. La constante gravitacional vale
+   **G = 6.674e-11 m³·kg⁻¹·s⁻²**. (Decisión vigente; sustituye a AU / masas
+   solares / años del borrador original.)
+3. La visualización y los controles son una **app web con Plotly + Dash**.
+   (Decisión vigente; sustituye a VPython del borrador original.)
 4. La tolerancia de error objetivo es **1 %**.
 5. Los tiempos de cada fase son **estimaciones relativas**, no fechas.
 6. No se incluye sonido (VPython no reproduce audio).
@@ -77,7 +79,7 @@ Se marcan para poder corregirlos si no aplican:
 |-----|-------------|
 | Cálculos numéricos | NumPy |
 | Integradores | Código propio (Euler-Cromer y Verlet) |
-| Visualización 3D | VPython |
+| Visualización 3D | Plotly + Dash |
 | Gráficas 2D | Matplotlib |
 | Pruebas | pytest + pytest-cov |
 | Empaquetado | PyInstaller (+ GitHub Actions para Windows/macOS/Linux) |
@@ -88,7 +90,7 @@ Se marcan para poder corregirlos si no aplican:
 - **Separar física de dibujo.** El cálculo nunca se hace dentro de la función que
   dibuja. Esto permite correr miles de pasos sin depender de los cuadros por
   segundo.
-- **Una sola convención de unidades.** AU, masas solares, años. No mezclar.
+- **Una sola convención de unidades.** SI (m, kg, s); la interfaz muestra días. No mezclar.
 - **Validar con números, no con la vista.** Un gráfico bonito no demuestra nada.
   Se comprueba con energía, momento angular y las leyes de Kepler.
 - **Tolerancia 1 %** como meta inicial, confirmable al experimentar con `dt`.
@@ -112,10 +114,11 @@ orbital-simulator/
 │   ├── kepler/          ¿Se cumplen las leyes?
 │   │   └── kepler_laws.py
 │   ├── render/          ¿Qué ve el usuario?
-│   │   ├── scene3d.py       Escena 3D (VPython)
+│   │   ├── scene3d.py       Escena 3D antigua (VPython, por retirar)
 │   │   └── plots.py         Gráficas 2D (Matplotlib)
-│   ├── ui/              Entradas del usuario
-│   │   └── controls.py
+│   ├── ui/              Interfaz web
+│   │   ├── app.py           Panel (Dash)
+│   │   └── figures.py       Figuras (Plotly)
 │   └── main.py          Orquestador (une todo)
 ├── tests/               Pruebas unitarias y de escenarios
 ├── data/                presets.json (condiciones iniciales)
@@ -180,7 +183,7 @@ hacer cálculos.
 **Riesgos / dependencias**
 
 - **Dependencia:** Fase 1.
-- **Riesgo:** mezclar unidades. Mitigación: documentar AU / masas solares / años.
+- **Riesgo:** mezclar unidades. Mitigación: documentar SI (m, kg, s) y el tiempo en días solo para mostrar.
 
 ---
 
@@ -191,7 +194,7 @@ Gravitación Universal.
 
 **Pasos**
 
-1. Definir la constante `G = 4π²` en las unidades del proyecto.
+1. Definir la constante `G = 6.674e-11 m³·kg⁻¹·s⁻²` en unidades SI.
 2. Escribir una prueba con dos cuerpos fijos y comparar la aceleración contra un
    valor calculado a mano.
 3. Correr la prueba y ver que falla.
