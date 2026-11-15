@@ -373,7 +373,7 @@ No se compilaron ejecutables: el empaquetado está expresamente en pausa. No se 
 
 ### A35 — Cerrar la revisión funcional en navegador
 
-- [x] **Hecha y comprobada** el 14 de noviembre de 2026 (ver registro al final).
+- [ ] **Parcial:** se ejecutó un subconjunto de la matriz (ver registro al final). Los casos no ejecutados siguen pendientes y no se declaran aprobados.
 - **Prioridad:** P1.
 - **Archivos y punto de entrada:** tests/test_app.py; docs/manual_de_usuario.md; interfaz completa.
 - **Hallazgo y reproducción:** Pendiente: las pruebas actuales llaman helpers y comparan cadenas; no verifican callbacks reales, accesibilidad, herramientas Plotly ni todas las secuencias de usuario.
