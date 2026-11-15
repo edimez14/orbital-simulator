@@ -52,6 +52,19 @@ python -m src.main
 
 Luego abre `http://127.0.0.1:8050` y pulsa **Iniciar Simulación**.
 
+## Despliegue en la nube
+
+El proyecto ya trae lo necesario para publicarse gratis:
+
+- `render.yaml` — servicio gratuito en Render (recomendado).
+- `Dockerfile` y `.dockerignore` — imagen para Hugging Face Spaces, Koyeb o
+  cualquier plataforma con Docker.
+- `Procfile` — arranque para plataformas que lo leen.
+- `requirements-deploy.txt` — dependencias mínimas (sin VPython ni Matplotlib).
+- `/health` — ruta de comprobación de salud.
+
+Las instrucciones paso a paso están en `docs/despliegue_gratuito.md`.
+
 El uso paso a paso está en `docs/manual_de_usuario.md`.
 
 ## Qué se puede hacer en el panel

@@ -979,6 +979,16 @@ app.config.suppress_callback_exceptions = True
 app.layout = build_layout()
 
 
+@app.server.get("/health")
+def _health():
+    """Respuesta rápida para la comprobación de salud de la plataforma.
+
+    Las plataformas gratuitas preguntan por esta ruta para saber si el servicio
+    está vivo. No calcula nada: responde en milisegundos.
+    """
+    return {"status": "ok"}
+
+
 @app.server.after_request
 def _sin_copias(response):
     """Pide al navegador que no guarde copias de las respuestas."""

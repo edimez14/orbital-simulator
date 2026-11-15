@@ -1,0 +1,27 @@
+# código nuevo edizon
+# Archivos que no deben entrar en la imagen de despliegue.
+
+.git
+.gitignore
+.venv
+__pycache__
+*.py[cod]
+.pytest_cache
+.coverage
+htmlcov
+
+build
+dist
+*.spec
+
+docs
+tests
+scripts
+graphify-out
+.graphify_*
+
+*.pdf
+*.jpg
+*.png
+
+deploy

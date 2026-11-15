@@ -1,0 +1,14 @@
+# código nuevo edizon
+# Dependencias mínimas para desplegar la interfaz web.
+# No incluye VPython ni Matplotlib: la app Dash no los usa.
+# Versiones comprobadas con la suite local el 14 de noviembre de 2026.
+
+# Calculos numericos.
+numpy==2.5.4
+
+# Aplicacion web y graficas interactivas.
+dash==4.4.1
+plotly==7.1.0
+
+# Servidor de produccion.
+gunicorn==23.0.0
