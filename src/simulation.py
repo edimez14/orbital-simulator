@@ -43,14 +43,8 @@ from src.config import project_root
 from src.integrators.euler_cromer import step as euler_cromer_step
 from src.integrators.verlet import step as verlet_step
 from src.physics.bodies import Body
-from src.physics.conservation import (
-    CONSERVATION_TARGET_PERCENT,
-    angular_momentum,
-    kinetic_energy,
-    mechanical_energy,
-    potential_energy,
-)
-from src.physics.gravity import MIN_DISTANCE
+from src.physics.conservation import CONSERVATION_TARGET_PERCENT
+from src.physics.gravity import G, MIN_DISTANCE
 from src.physics.validation import validate_body_objects
 
 # Archivo con los escenarios guardados.
@@ -245,16 +239,64 @@ def _min_pair(bodies):
     """
     best = (math.inf, "", "")
     for i in range(len(bodies)):
+        first = bodies[i]
         for j in range(i + 1, len(bodies)):
-            distance = float(np.linalg.norm(bodies[j].position - bodies[i].position))
+            second = bodies[j]
+            dx = float(second.position[0]) - float(first.position[0])
+            dy = float(second.position[1]) - float(first.position[1])
+            dz = float(second.position[2]) - float(first.position[2])
+            distance = math.sqrt(dx * dx + dy * dy + dz * dz)
             if distance < best[0]:
-                best = (distance, bodies[i].name, bodies[j].name)
+                best = (distance, first.name, second.name)
     return best
 
 
-def _momentum_vector(bodies):
-    """Suma vectorial del momento angular de todos los cuerpos."""
-    return np.sum([angular_momentum(body) for body in bodies], axis=0)
+def _measures(bodies):
+    """Energía y momento angular del sistema, calculados sin NumPy.
+
+    Se usa en cada paso del motor, así que conviene que sea rápido: para dos a
+    cinco cuerpos, operar con números sueltos evita el costo de crear arreglos.
+
+    Recibe:
+        bodies : lista de cuerpos.
+    Devuelve:
+        Una tupla (cinética, potencial, total, momento_angular) donde el momento
+        es un vector (Lx, Ly, Lz).
+    """
+    kinetic = 0.0
+    potential = 0.0
+    lx = ly = lz = 0.0
+
+    for body in bodies:
+        mass = float(body.mass)
+        x = float(body.position[0])
+        y = float(body.position[1])
+        z = float(body.position[2])
+        vx = float(body.velocity[0])
+        vy = float(body.velocity[1])
+        vz = float(body.velocity[2])
+
+        kinetic += 0.5 * mass * (vx * vx + vy * vy + vz * vz)
+        lx += mass * (y * vz - z * vy)
+        ly += mass * (z * vx - x * vz)
+        lz += mass * (x * vy - y * vx)
+
+    for i in range(len(bodies)):
+        first = bodies[i]
+        for j in range(i + 1, len(bodies)):
+            second = bodies[j]
+            dx = float(second.position[0]) - float(first.position[0])
+            dy = float(second.position[1]) - float(first.position[1])
+            dz = float(second.position[2]) - float(first.position[2])
+            distance = math.sqrt(dx * dx + dy * dy + dz * dz)
+            if distance < MIN_DISTANCE:
+                raise ValueError(
+                    f"Los cuerpos '{first.name}' y '{second.name}' están a "
+                    f"{distance:.3g} m, menos que el mínimo de {MIN_DISTANCE:g} m."
+                )
+            potential -= G * float(first.mass) * float(second.mass) / distance
+
+    return kinetic, potential, kinetic + potential, (lx, ly, lz)
 
 
 def _update_max(error_state, current, initial):
@@ -323,9 +365,8 @@ def run_simulation(bodies, dt, steps, method="Euler-Cromer", record_every=1,
         "velocities": [],
     }
 
-    initial_energy = mechanical_energy(bodies)
-    initial_momentum = _momentum_vector(bodies)
-    initial_momentum_norm = float(np.linalg.norm(initial_momentum))
+    initial_kinetic, initial_potential, initial_energy, initial_momentum = _measures(bodies)
+    initial_momentum_norm = math.sqrt(sum(component * component for component in initial_momentum))
 
     energy_error = {"max_percent": None, "max_absolute": 0.0, "reference_zero": False}
     momentum_error = {"max_percent": None, "max_absolute": 0.0, "reference_zero": False}
@@ -335,22 +376,24 @@ def run_simulation(bodies, dt, steps, method="Euler-Cromer", record_every=1,
     if momentum_scale == 0:
         momentum_error["reference_zero"] = True
 
-    def save_state(at_time):
-        """Guarda el estado actual en el historial."""
+    def save_state(at_time, measures):
+        """Guarda el estado actual en el historial, con sus magnitudes ya calculadas."""
+        kinetic, potential, energy, momentum = measures
         history["time"].append(float(at_time))
-        history["energy"].append(float(mechanical_energy(bodies)))
-        history["energy_kinetic"].append(float(sum(kinetic_energy(body) for body in bodies)))
-        history["energy_potential"].append(float(potential_energy(bodies)))
-        history["momentum"].append(float(np.linalg.norm(_momentum_vector(bodies))))
+        history["energy"].append(float(energy))
+        history["energy_kinetic"].append(float(kinetic))
+        history["energy_potential"].append(float(potential))
+        history["momentum"].append(float(math.sqrt(sum(c * c for c in momentum))))
         history["positions"].append([body.position.copy() for body in bodies])
         history["velocities"].append([body.velocity.copy() for body in bodies])
 
-    save_state(0.0)
+    save_state(
+        0.0, (initial_kinetic, initial_potential, initial_energy, initial_momentum)
+    )
 
     time = 0.0
     steps_done = 0
     stopped = None
-    total_momentum = initial_momentum
 
     for step_number in range(1, steps + 1):
         current_step = final_step if step_number == steps else step
@@ -374,18 +417,20 @@ def run_simulation(bodies, dt, steps, method="Euler-Cromer", record_every=1,
             break
 
         # Conservación medida en cada paso, no solo en los guardados (A21).
-        current_energy = mechanical_energy(bodies)
-        _update_max(energy_error, current_energy, initial_energy)
+        measures = _measures(bodies)
+        _update_max(energy_error, measures[2], initial_energy)
 
-        total_momentum = _momentum_vector(bodies)
         if momentum_scale > 0:
-            difference = float(np.linalg.norm(total_momentum - initial_momentum))
+            momentum = measures[3]
+            difference = math.sqrt(
+                sum((momentum[i] - initial_momentum[i]) ** 2 for i in range(3))
+            )
             percentage = difference / momentum_scale * 100.0
             momentum_error["max_percent"] = max(momentum_error["max_percent"] or 0.0, percentage)
             momentum_error["max_absolute"] = max(momentum_error["max_absolute"], difference)
 
         if step_number in saved:
-            save_state(time)
+            save_state(time, measures)
 
     history["conservation"] = {
         "target_percent": CONSERVATION_TARGET_PERCENT,
