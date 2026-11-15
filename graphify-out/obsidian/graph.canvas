@@ -1,0 +1,5207 @@
+{
+  "nodes": [
+    {
+      "id": "g0",
+      "type": "group",
+      "label": "Community 0",
+      "x": 0,
+      "y": 0,
+      "width": 1540,
+      "height": 820,
+      "color": "1"
+    },
+    {
+      "id": "n_src_ui_figures_rationale_88",
+      "type": "file",
+      "file": "Aplica el estilo oscuro com\u00fan a una figura. Recibe figure  figura de Plotly.\u2026.md",
+      "x": 20,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_114",
+      "type": "file",
+      "file": "Color del cuerpo el suyo si es conocido, o uno de la lista..md",
+      "x": 220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_664",
+      "type": "file",
+      "file": "Corre la simulaci\u00f3n y arma todo lo que se muestra en el panel. Recibe\u2026.md",
+      "x": 420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_727",
+      "type": "file",
+      "file": "Corre la simulaci\u00f3n, o solo rehace la vista si se movi\u00f3 un control. La\u2026.md",
+      "x": 620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_215",
+      "type": "file",
+      "file": "Dibuja un cuerpo como una esfera halo, c\u00edrculo y brillo..md",
+      "x": 820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_469",
+      "type": "file",
+      "file": "Energ\u00eda mec\u00e1nica contra el tiempo total, cin\u00e9tica y potencial. Recibe history\u2026.md",
+      "x": 1020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_126",
+      "type": "file",
+      "file": "Figura vac\u00eda con un mensaje, para los huecos del panel..md",
+      "x": 1220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_119",
+      "type": "file",
+      "file": "Fondo de estrellas, para que la escena no se vea vac\u00eda. Recibe extent  tama\u00f1o\u2026.md",
+      "x": 20,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_163",
+      "type": "file",
+      "file": "Las cuatro gr\u00e1ficas del boceto se construyen con el historial..md",
+      "x": 220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_182",
+      "type": "file",
+      "file": "Las tres trazas de un cuerpo halo, cuerpo y brillo. Recibe name  nombre del\u2026.md",
+      "x": 420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_166",
+      "type": "file",
+      "file": "Mitad del encuadre de la vista. Se calcula con lo que se lleva recorrido, para\u2026.md",
+      "x": 620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_493",
+      "type": "file",
+      "file": "Momento angular contra el tiempo. Recibe history  historial con time y\u2026.md",
+      "x": 820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_142",
+      "type": "file",
+      "file": "Pasa puntos (x, y, z) a coordenadas de pantalla (x, y). Usa dos \u00e1ngulos azimut\u2026.md",
+      "x": 1020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_109",
+      "type": "file",
+      "file": "Posiciones del cuerpo `index` respecto al primario (\u00edndice 0)..md",
+      "x": 1220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_512",
+      "type": "file",
+      "file": "Toma una muestra del historial, para animar la \u00f3rbita con pocos puntos. Recibe\u2026.md",
+      "x": 20,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_332",
+      "type": "file",
+      "file": "Vista de la \u00f3rbita animada dentro del navegador (Tarea 27). La figura trae\u2026.md",
+      "x": 220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_308",
+      "type": "file",
+      "file": "Vista de la \u00f3rbita hasta un punto. Recibe history  historial con la lista\u2026.md",
+      "x": 420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_221",
+      "type": "file",
+      "file": "Vista de la \u00f3rbita estrellas, ejes, recorrido y cuerpos. Recibe names \u2026.md",
+      "x": 620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_add_body",
+      "type": "file",
+      "file": "_add_body().md",
+      "x": 820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_base_layout",
+      "type": "file",
+      "file": "_base_layout().md",
+      "x": 1020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_body_color",
+      "type": "file",
+      "file": "_body_color().md",
+      "x": 1220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_body_traces",
+      "type": "file",
+      "file": "_body_traces().md",
+      "x": 20,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_empty_figure",
+      "type": "file",
+      "file": "_empty_figure().md",
+      "x": 220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_extent",
+      "type": "file",
+      "file": "_extent().md",
+      "x": 420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_orbit_view",
+      "type": "file",
+      "file": "_orbit_view().md",
+      "x": 620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_project",
+      "type": "file",
+      "file": "_project().md",
+      "x": 820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_relative_positions",
+      "type": "file",
+      "file": "_relative_positions().md",
+      "x": 1020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_stars",
+      "type": "file",
+      "file": "_stars().md",
+      "x": 1220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_animation_from",
+      "type": "file",
+      "file": "animation_from().md",
+      "x": 20,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_build_panel",
+      "type": "file",
+      "file": "build_panel().md",
+      "x": 220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_energy_figure",
+      "type": "file",
+      "file": "energy_figure().md",
+      "x": 420,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures",
+      "type": "file",
+      "file": "figures.py.md",
+      "x": 620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_2",
+      "type": "file",
+      "file": "figures.py \u2014 Figuras de la interfaz (Plotly). \u00bfPara qu\u00e9 sirve Construir las\u2026.md",
+      "x": 820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_kepler_figure",
+      "type": "file",
+      "file": "kepler_figure().md",
+      "x": 1020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_math",
+      "type": "file",
+      "file": "math.md",
+      "x": 1220,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_momentum_figure",
+      "type": "file",
+      "file": "momentum_figure().md",
+      "x": 20,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_orbit_animation",
+      "type": "file",
+      "file": "orbit_animation().md",
+      "x": 220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_orbit_frame",
+      "type": "file",
+      "file": "orbit_frame().md",
+      "x": 420,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_plotly_graph_objects",
+      "type": "file",
+      "file": "plotly_graph_objects.md",
+      "x": 620,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_las_graficas_del_analisis_se_construyen",
+      "type": "file",
+      "file": "test_las_graficas_del_analisis_se_construyen().md",
+      "x": 820,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_trajectory_figure",
+      "type": "file",
+      "file": "trajectory_figure().md",
+      "x": 1020,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_update_panel",
+      "type": "file",
+      "file": "update_panel().md",
+      "x": 1220,
+      "y": 480,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_515",
+      "type": "file",
+      "file": "\u00c1reas barridas por el cuerpo que orbita (segunda ley de Kepler). Recibe\u2026.md",
+      "x": 20,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_434",
+      "type": "file",
+      "file": "\u00d3rbita en 2D (plano x\u2013y) del cuerpo que orbita respecto al primario. Recibe\u2026.md",
+      "x": 220,
+      "y": 560,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "label": "Community 1",
+      "x": 1620,
+      "y": 0,
+      "width": 1320,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "n_tests_test_plots_rationale_40",
+      "type": "file",
+      "file": "Comprueba que el archivo existe y que los dos ejes tienen r\u00f3tulo..md",
+      "x": 1640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_78",
+      "type": "file",
+      "file": "De 100 a 101 hay 1 %..md",
+      "x": 1840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_110",
+      "type": "file",
+      "file": "Gr\u00e1fica de T\u00b2 contra a\u00b3 para varias \u00f3rbitas alrededor del mismo cuerpo. Recibe\u2026.md",
+      "x": 2040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_49",
+      "type": "file",
+      "file": "Gr\u00e1fica de la variaci\u00f3n relativa de la energ\u00eda contra el tiempo. Recibe\u2026.md",
+      "x": 2240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_70",
+      "type": "file",
+      "file": "Gr\u00e1fica de la variaci\u00f3n relativa del momento angular contra el tiempo. Recibe\u2026.md",
+      "x": 2440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_91",
+      "type": "file",
+      "file": "Gr\u00e1fica del \u00e1rea barrida por el radio vector contra el tiempo. Recibe times \u2026.md",
+      "x": 2640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_38",
+      "type": "file",
+      "file": "Guarda la figura si se indic\u00f3 una ruta. Recibe figure  figura de Matplotlib.\u2026.md",
+      "x": 1640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_rationale_69",
+      "type": "file",
+      "file": "La gr\u00e1fica de T\u00b2 contra a\u00b3 se guarda y tiene r\u00f3tulos..md",
+      "x": 1840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_rationale_48",
+      "type": "file",
+      "file": "La gr\u00e1fica de energ\u00eda se guarda y tiene r\u00f3tulos..md",
+      "x": 2040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_rationale_55",
+      "type": "file",
+      "file": "La gr\u00e1fica de momento angular se guarda y tiene r\u00f3tulos..md",
+      "x": 2240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_rationale_62",
+      "type": "file",
+      "file": "La gr\u00e1fica de \u00e1rea barrida se guarda y tiene r\u00f3tulos..md",
+      "x": 2440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_97",
+      "type": "file",
+      "file": "Variaci\u00f3n porcentual respecto al valor inicial. Se divide entre el valor\u2026.md",
+      "x": 2640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_revisar",
+      "type": "file",
+      "file": "_revisar().md",
+      "x": 1640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_save",
+      "type": "file",
+      "file": "_save().md",
+      "x": 1840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_matplotlib_pyplot",
+      "type": "file",
+      "file": "matplotlib_pyplot.md",
+      "x": 2040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_plot_angular_momentum",
+      "type": "file",
+      "file": "plot_angular_momentum().md",
+      "x": 2240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_plot_energy",
+      "type": "file",
+      "file": "plot_energy().md",
+      "x": 2440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_plot_swept_area",
+      "type": "file",
+      "file": "plot_swept_area().md",
+      "x": 2640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_plot_third_law",
+      "type": "file",
+      "file": "plot_third_law().md",
+      "x": 1640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots",
+      "type": "file",
+      "file": "plots.py.md",
+      "x": 1840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_plots_rationale_2",
+      "type": "file",
+      "file": "plots.py \u2014 Gr\u00e1ficas 2D de an\u00e1lisis. \u00bfPara qu\u00e9 sirve Producir las gr\u00e1ficas que\u2026.md",
+      "x": 2040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_relative_error",
+      "type": "file",
+      "file": "relative_error().md",
+      "x": 2240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_test_grafica_de_area_barrida",
+      "type": "file",
+      "file": "test_grafica_de_area_barrida().md",
+      "x": 2440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_test_grafica_de_energia",
+      "type": "file",
+      "file": "test_grafica_de_energia().md",
+      "x": 2640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_test_grafica_de_momento_angular",
+      "type": "file",
+      "file": "test_grafica_de_momento_angular().md",
+      "x": 1640,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_test_grafica_de_tercera_ley",
+      "type": "file",
+      "file": "test_grafica_de_tercera_ley().md",
+      "x": 1840,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots",
+      "type": "file",
+      "file": "test_plots.py.md",
+      "x": 2040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_plots_rationale_2",
+      "type": "file",
+      "file": "test_plots.py \u2014 Pruebas de las gr\u00e1ficas de an\u00e1lisis. \u00bfPara qu\u00e9 sirve Comprobar\u2026.md",
+      "x": 2240,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_test_variacion_relativa",
+      "type": "file",
+      "file": "test_variacion_relativa().md",
+      "x": 2440,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "label": "Community 2",
+      "x": 3020,
+      "y": 0,
+      "width": 1320,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_tests_test_app_rationale_245",
+      "type": "file",
+      "file": "Cada tipo de trayectoria usa la velocidad que le toca..md",
+      "x": 3040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_261",
+      "type": "file",
+      "file": "Devuelve la lista con la velocidad del cuerpo que orbita seg\u00fan el tipo. Recibe\u2026.md",
+      "x": 3240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_189",
+      "type": "file",
+      "file": "Devuelve la lista con un campo de un cuerpo cambiado..md",
+      "x": 3440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_179",
+      "type": "file",
+      "file": "Devuelve la lista con un cuerpo nuevo al final..md",
+      "x": 3640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_184",
+      "type": "file",
+      "file": "Devuelve la lista sin el cuerpo de esa posici\u00f3n..md",
+      "x": 3840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_225",
+      "type": "file",
+      "file": "Las tres operaciones del panel cambian la lista como se espera..md",
+      "x": 4040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_618",
+      "type": "file",
+      "file": "Mantiene la lista de cuerpos escenario, velocidad, agregar o cambiar..md",
+      "x": 3040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_init_rationale_2",
+      "type": "file",
+      "file": "Paquete `ui` \u2014 entradas del usuario. Contiene la interfaz de controles que\u2026.md",
+      "x": 3240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_232",
+      "type": "file",
+      "file": "Pone la velocidad del cuerpo que orbita en `factor` veces la circular. La\u2026.md",
+      "x": 3440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_196",
+      "type": "file",
+      "file": "Velocidad circular a una distancia del cuerpo central sqrt(G\u00b7Mr)..md",
+      "x": 3640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_201",
+      "type": "file",
+      "file": "Velocidad del cuerpo que orbita seg\u00fan el tipo de trayectoria elegido. Recibe\u2026.md",
+      "x": 3840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_add_body_to",
+      "type": "file",
+      "file": "add_body_to().md",
+      "x": 4040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app",
+      "type": "file",
+      "file": "app.py.md",
+      "x": 3040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_2",
+      "type": "file",
+      "file": "app.py \u2014 Interfaz web (Dash) del simulador. \u00bfPara qu\u00e9 sirve Montar el panel\u2026.md",
+      "x": 3240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_apply_speed",
+      "type": "file",
+      "file": "apply_speed().md",
+      "x": 3440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_apply_trajectory",
+      "type": "file",
+      "file": "apply_trajectory().md",
+      "x": 3640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_circular_speed",
+      "type": "file",
+      "file": "circular_speed().md",
+      "x": 3840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_copy",
+      "type": "file",
+      "file": "copy.md",
+      "x": 4040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_dash",
+      "type": "file",
+      "file": "dash.md",
+      "x": 3040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_remove_body_at",
+      "type": "file",
+      "file": "remove_body_at().md",
+      "x": 3240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_set_body_field",
+      "type": "file",
+      "file": "set_body_field().md",
+      "x": 3440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_agregar_eliminar_y_editar_cuerpos",
+      "type": "file",
+      "file": "test_agregar_eliminar_y_editar_cuerpos().md",
+      "x": 3640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_las_velocidades_por_tipo_de_trayectoria",
+      "type": "file",
+      "file": "test_las_velocidades_por_tipo_de_trayectoria().md",
+      "x": 3840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_trajectory_speed",
+      "type": "file",
+      "file": "trajectory_speed().md",
+      "x": 4040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_init",
+      "type": "file",
+      "file": "ui__init__.py.md",
+      "x": 3040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_update_bodies",
+      "type": "file",
+      "file": "update_bodies().md",
+      "x": 3240,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "label": "Community 3",
+      "x": 4420,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "4"
+    },
+    {
+      "id": "n_src_ui_app_rationale_499",
+      "type": "file",
+      "file": "Arma el panel completo izquierda, centro y derecha..md",
+      "x": 4440,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_431",
+      "type": "file",
+      "file": "Centro controles de la vista, vista de la \u00f3rbita, resultados y tabla..md",
+      "x": 4640,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_480",
+      "type": "file",
+      "file": "Derecha las gr\u00e1ficas del an\u00e1lisis..md",
+      "x": 4840,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_603",
+      "type": "file",
+      "file": "Dibuja una tarjeta editable por cada cuerpo..md",
+      "x": 5040,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_29",
+      "type": "file",
+      "file": "El panel arma configuraci\u00f3n, vista, resultados, tabla y gr\u00e1ficas..md",
+      "x": 5240,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_40",
+      "type": "file",
+      "file": "El panel muestra los cuatro pasos y el bot\u00f3n de iniciar..md",
+      "x": 4440,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_178",
+      "type": "file",
+      "file": "El panel trae el bot\u00f3n de agregar y los campos de cada cuerpo..md",
+      "x": 4640,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_351",
+      "type": "file",
+      "file": "Encabezado del panel..md",
+      "x": 4840,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_367",
+      "type": "file",
+      "file": "Panel izquierdo los pasos para configurar y correr la simulaci\u00f3n..md",
+      "x": 5040,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_650",
+      "type": "file",
+      "file": "Pone el control de velocidad seg\u00fan el tipo de \u00f3rbita elegido..md",
+      "x": 5240,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_315",
+      "type": "file",
+      "file": "Tarjeta editable de un cuerpo nombre, masa, posici\u00f3n y velocidad..md",
+      "x": 4440,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_294",
+      "type": "file",
+      "file": "Un campo editable de un cuerpo. Los campos guardan su valor al salir de la\u2026.md",
+      "x": 4640,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_body_card",
+      "type": "file",
+      "file": "_body_card().md",
+      "x": 4840,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_body_field",
+      "type": "file",
+      "file": "_body_field().md",
+      "x": 5040,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_center_panel",
+      "type": "file",
+      "file": "_center_panel().md",
+      "x": 5240,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_config_panel",
+      "type": "file",
+      "file": "_config_panel().md",
+      "x": 4440,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_header",
+      "type": "file",
+      "file": "_header().md",
+      "x": 4640,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_plots_panel",
+      "type": "file",
+      "file": "_plots_panel().md",
+      "x": 4840,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_build_layout",
+      "type": "file",
+      "file": "build_layout().md",
+      "x": 5040,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_callback",
+      "type": "file",
+      "file": "callback.md",
+      "x": 5240,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_render_bodies",
+      "type": "file",
+      "file": "render_bodies().md",
+      "x": 4440,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_set_speed_for_type",
+      "type": "file",
+      "file": "set_speed_for_type().md",
+      "x": 4640,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_panel_guiia_por_pasos",
+      "type": "file",
+      "file": "test_el_panel_guiia_por_pasos().md",
+      "x": 4840,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_panel_permite_editar_y_agregar_cuerpos",
+      "type": "file",
+      "file": "test_el_panel_permite_editar_y_agregar_cuerpos().md",
+      "x": 5040,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_panel_trae_las_zonas_del_boceto",
+      "type": "file",
+      "file": "test_el_panel_trae_las_zonas_del_boceto().md",
+      "x": 5240,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g4",
+      "type": "group",
+      "label": "Community 4",
+      "x": 5600,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "5"
+    },
+    {
+      "id": "n_src_integrators_euler_cromer_rationale_34",
+      "type": "file",
+      "file": "Avanza el estado del sistema un paso `dt` con Euler-Cromer. Recibe bodies \u2026.md",
+      "x": 5620,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_bodies_body",
+      "type": "file",
+      "file": "Body.md",
+      "x": 5820,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_elliptical_rationale_43",
+      "type": "file",
+      "file": "Con v = 0.8\u00b7v_c a = 1.1e11 m y e = 0.36 (dentro del 1 %)..md",
+      "x": 6020,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_hyperbolic_rationale_44",
+      "type": "file",
+      "file": "Con v = 1.2\u00b7v_escape la distancia crece sin volver y E \u2265 0..md",
+      "x": 6220,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_circular_rationale_43",
+      "type": "file",
+      "file": "Con v = v_c el radio var\u00eda menos del 1 % y la \u00f3rbita se cierra..md",
+      "x": 6420,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_hyperbolic_rationale_2",
+      "type": "file",
+      "file": "Escenario de prueba trayectoria hiperb\u00f3lica. \u00bfPara qu\u00e9 sirve Comprobar que\u2026.md",
+      "x": 5620,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_circular_rationale_2",
+      "type": "file",
+      "file": "Escenario de prueba \u00f3rbita circular. \u00bfPara qu\u00e9 sirve Comprobar que con una\u2026.md",
+      "x": 5820,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_elliptical_rationale_2",
+      "type": "file",
+      "file": "Escenario de prueba \u00f3rbita el\u00edptica. \u00bfPara qu\u00e9 sirve Comprobar que con una\u2026.md",
+      "x": 6020,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_bodies_rationale_45",
+      "type": "file",
+      "file": "Un cuerpo celeste su masa, posici\u00f3n y velocidad actuales..md",
+      "x": 6220,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_bodies",
+      "type": "file",
+      "file": "bodies.py.md",
+      "x": 6420,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_bodies_rationale_2",
+      "type": "file",
+      "file": "bodies.py \u2014 Define qu\u00e9 es un cuerpo celeste. \u00bfPara qu\u00e9 sirve Representar un\u2026.md",
+      "x": 5620,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_euler_cromer",
+      "type": "file",
+      "file": "euler_cromer.py.md",
+      "x": 5820,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_euler_cromer_rationale_2",
+      "type": "file",
+      "file": "euler_cromer.py \u2014 Integrador de Euler-Cromer. \u00bfPara qu\u00e9 sirve Avanzar el\u2026.md",
+      "x": 6020,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_euler_cromer_step",
+      "type": "file",
+      "file": "step().md",
+      "x": 6220,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_bodies",
+      "type": "file",
+      "file": "test_bodies.py.md",
+      "x": 6420,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_bodies_rationale_2",
+      "type": "file",
+      "file": "test_bodies.py \u2014 Pruebas de la clase `Body`. \u00bfPara qu\u00e9 sirve Comprobar que un\u2026.md",
+      "x": 5620,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_bodies_test_guarda_los_datos_iniciales",
+      "type": "file",
+      "file": "test_guarda_los_datos_iniciales().md",
+      "x": 5820,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_elliptical_test_orbita_eliptica",
+      "type": "file",
+      "file": "test_orbita_eliptica().md",
+      "x": 6020,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_circular_test_radio_casi_constante_y_orbita_cerrada",
+      "type": "file",
+      "file": "test_radio_casi_constante_y_orbita_cerrada().md",
+      "x": 6220,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_circular",
+      "type": "file",
+      "file": "test_scenario_circular.py.md",
+      "x": 6420,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_elliptical",
+      "type": "file",
+      "file": "test_scenario_elliptical.py.md",
+      "x": 5620,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_hyperbolic",
+      "type": "file",
+      "file": "test_scenario_hyperbolic.py.md",
+      "x": 5820,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_scenarios_test_scenario_hyperbolic_test_trayectoria_hiperbolica_escapa",
+      "type": "file",
+      "file": "test_trayectoria_hiperbolica_escapa().md",
+      "x": 6020,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g5",
+      "type": "group",
+      "label": "Community 5",
+      "x": 6780,
+      "y": 0,
+      "width": 1100,
+      "height": 620,
+      "color": "6"
+    },
+    {
+      "id": "n_src_config_rationale_24",
+      "type": "file",
+      "file": "Carpeta base del proyecto. Empaquetado con PyInstaller los archivos van a la\u2026.md",
+      "x": 6800,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_rationale_83",
+      "type": "file",
+      "file": "Convierte el archivo Markdown `origen` en el PDF `destino`..md",
+      "x": 7000,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_rationale_53",
+      "type": "file",
+      "file": "Devuelve la ruta de una fuente buscando en las carpetas conocidas. Se recorre\u2026.md",
+      "x": 7200,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_292",
+      "type": "file",
+      "file": "El estilo trae reglas para pantallas medianas y peque\u00f1as (Tarea 14)..md",
+      "x": 7400,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_path",
+      "type": "file",
+      "file": "Path_1.md",
+      "x": 7600,
+      "y": 80,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_rationale_68",
+      "type": "file",
+      "file": "Quita las etiquetas de formato dentro de las celdas de tabla. El motor de PDF\u2026.md",
+      "x": 6800,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_config",
+      "type": "file",
+      "file": "config.py.md",
+      "x": 7000,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_config_rationale_2",
+      "type": "file",
+      "file": "config.py \u2014 Rutas y par\u00e1metros generales del proyecto. \u00bfPara qu\u00e9 sirve Dar la\u2026.md",
+      "x": 7200,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "type": "file",
+      "file": "convertir_markdown_a_pdf().md",
+      "x": 7400,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_encontrar_fuente",
+      "type": "file",
+      "file": "encontrar_fuente().md",
+      "x": 7600,
+      "y": 160,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_fpdf",
+      "type": "file",
+      "file": "fpdf.md",
+      "x": 6800,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf",
+      "type": "file",
+      "file": "generar_pdf.py.md",
+      "x": 7000,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_limpiar_celdas_limpiar",
+      "type": "file",
+      "file": "limpiar().md",
+      "x": 7200,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_limpiar_celdas",
+      "type": "file",
+      "file": "limpiar_celdas().md",
+      "x": 7400,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_generar_pdf_main",
+      "type": "file",
+      "file": "main().md",
+      "x": 7600,
+      "y": 240,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_markdown",
+      "type": "file",
+      "file": "markdown.md",
+      "x": 6800,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pathlib",
+      "type": "file",
+      "file": "pathlib.md",
+      "x": 7000,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_config_project_root",
+      "type": "file",
+      "file": "project_root().md",
+      "x": 7200,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_re",
+      "type": "file",
+      "file": "re.md",
+      "x": 7400,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_sys",
+      "type": "file",
+      "file": "sys.md",
+      "x": 7600,
+      "y": 320,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_estilo_se_adapta_a_pantallas_pequenas",
+      "type": "file",
+      "file": "test_el_estilo_se_adapta_a_pantallas_pequenas().md",
+      "x": 6800,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_warnings",
+      "type": "file",
+      "file": "warnings.md",
+      "x": 7000,
+      "y": 400,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g6",
+      "type": "group",
+      "label": "Community 6",
+      "x": 0,
+      "y": 900,
+      "width": 1100,
+      "height": 620,
+      "color": "1"
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_57",
+      "type": "file",
+      "file": "Dos masas de 1 kg separadas 1 m U = -G julios..md",
+      "x": 20,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_83",
+      "type": "file",
+      "file": "En una \u00f3rbita circular, E y L var\u00edan menos del 1 % tras un periodo..md",
+      "x": 220,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_44",
+      "type": "file",
+      "file": "Energ\u00eda cin\u00e9tica de un cuerpo K = \u00bd \u00b7 m \u00b7 v\u00b2. Recibe body  un cuerpo (usa su\u2026.md",
+      "x": 420,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_72",
+      "type": "file",
+      "file": "Energ\u00eda mec\u00e1nica total del sistema suma de las cin\u00e9ticas m\u00e1s la potencial.\u2026.md",
+      "x": 620,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_55",
+      "type": "file",
+      "file": "Energ\u00eda potencial gravitacional del sistema U = -G \u00b7 \u03a3 m_i\u00b7m_j  r_ij. Recibe\u2026.md",
+      "x": 820,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_65",
+      "type": "file",
+      "file": "La Tierra en \u00f3rbita L_z = m \u00b7 r \u00b7 v..md",
+      "x": 20,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_50",
+      "type": "file",
+      "file": "Masa 2 kg con velocidad (3, 0, 0) ms K = 9 J..md",
+      "x": 220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_86",
+      "type": "file",
+      "file": "Momento angular de un cuerpo respecto al origen L = r \u00d7 (m \u00b7 v). Recibe body\u2026.md",
+      "x": 420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_angular_momentum",
+      "type": "file",
+      "file": "angular_momentum().md",
+      "x": 620,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation",
+      "type": "file",
+      "file": "conservation.py.md",
+      "x": 820,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_rationale_2",
+      "type": "file",
+      "file": "conservation.py \u2014 Calcula energ\u00eda mec\u00e1nica y momento angular. \u00bfPara qu\u00e9 sirve\u2026.md",
+      "x": 20,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_kinetic_energy",
+      "type": "file",
+      "file": "kinetic_energy().md",
+      "x": 220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_mechanical_energy",
+      "type": "file",
+      "file": "mechanical_energy().md",
+      "x": 420,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_conservation_potential_energy",
+      "type": "file",
+      "file": "potential_energy().md",
+      "x": 620,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation",
+      "type": "file",
+      "file": "simulation.py.md",
+      "x": 820,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_rationale_2",
+      "type": "file",
+      "file": "simulation.py \u2014 Motor de la simulaci\u00f3n. \u00bfPara qu\u00e9 sirve Correr el loop de\u2026.md",
+      "x": 20,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation",
+      "type": "file",
+      "file": "test_conservation.py.md",
+      "x": 220,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_rationale_2",
+      "type": "file",
+      "file": "test_conservation.py \u2014 Pruebas de conservaci\u00f3n de energ\u00eda y momento angular.\u2026.md",
+      "x": 420,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_test_energia_cinetica",
+      "type": "file",
+      "file": "test_energia_cinetica().md",
+      "x": 620,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_test_energia_potencial",
+      "type": "file",
+      "file": "test_energia_potencial().md",
+      "x": 820,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_test_momento_angular",
+      "type": "file",
+      "file": "test_momento_angular().md",
+      "x": 20,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_conservation_test_orbita_circular_conserva_energia_y_momento",
+      "type": "file",
+      "file": "test_orbita_circular_conserva_energia_y_momento().md",
+      "x": 220,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g7",
+      "type": "group",
+      "label": "Community 7",
+      "x": 1620,
+      "y": 900,
+      "width": 1100,
+      "height": 620,
+      "color": "2"
+    },
+    {
+      "id": "n_github_workflows_build_installers_jobs_build",
+      "type": "file",
+      "file": "build.md",
+      "x": 1640,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers",
+      "type": "file",
+      "file": "build-installers.yml.md",
+      "x": 1840,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_strategy_fail_fast",
+      "type": "file",
+      "file": "fail-fast.md",
+      "x": 2040,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_jobs",
+      "type": "file",
+      "file": "jobs.md",
+      "x": 2240,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_strategy_matrix",
+      "type": "file",
+      "file": "matrix.md",
+      "x": 2440,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_name",
+      "type": "file",
+      "file": "name.md",
+      "x": 1640,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_steps_name",
+      "type": "file",
+      "file": "name_1.md",
+      "x": 1840,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_with_name",
+      "type": "file",
+      "file": "name_2.md",
+      "x": 2040,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_on",
+      "type": "file",
+      "file": "on.md",
+      "x": 2240,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_matrix_os",
+      "type": "file",
+      "file": "os.md",
+      "x": 2440,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_with_path",
+      "type": "file",
+      "file": "path.md",
+      "x": 1640,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_on_push",
+      "type": "file",
+      "file": "push.md",
+      "x": 1840,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_with_python_version",
+      "type": "file",
+      "file": "python-version.md",
+      "x": 2040,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_steps_run",
+      "type": "file",
+      "file": "run.md",
+      "x": 2240,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_build_runs_on",
+      "type": "file",
+      "file": "runs-on.md",
+      "x": 2440,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_build_steps",
+      "type": "file",
+      "file": "steps.md",
+      "x": 1640,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_build_strategy",
+      "type": "file",
+      "file": "strategy.md",
+      "x": 1840,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_push_tags",
+      "type": "file",
+      "file": "tags.md",
+      "x": 2040,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_steps_uses",
+      "type": "file",
+      "file": "uses.md",
+      "x": 2240,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_steps_with",
+      "type": "file",
+      "file": "with.md",
+      "x": 2440,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_github_workflows_build_installers_on_workflow_dispatch",
+      "type": "file",
+      "file": "workflow_dispatch.md",
+      "x": 1640,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g8",
+      "type": "group",
+      "label": "Community 8",
+      "x": 3020,
+      "y": 900,
+      "width": 1100,
+      "height": 620,
+      "color": "3"
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_69",
+      "type": "file",
+      "file": "Crea la escena 3D con esferas, trayectorias, ejes y fondo estelar. Recibe\u2026.md",
+      "x": 3040,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_113",
+      "type": "file",
+      "file": "Crea la esfera de un cuerpo con su tama\u00f1o, color y textura. Recibe body  un\u2026.md",
+      "x": 3240,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_150",
+      "type": "file",
+      "file": "Dibuja el fondo estelar como puntos repartidos en una esfera lejana. Recibe\u2026.md",
+      "x": 3440,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_139",
+      "type": "file",
+      "file": "Dibuja los tres ejes de referencia x rojo, y verde, z azul. Recibe length \u2026.md",
+      "x": 3640,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls_rationale_33",
+      "type": "file",
+      "file": "En la superficie de la Tierra v_escape \u2248 11186 ms..md",
+      "x": 3840,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_95",
+      "type": "file",
+      "file": "Mueve las esferas a la posici\u00f3n actual y alarga las trayectorias. Recibe\u2026.md",
+      "x": 3040,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls_rationale_38",
+      "type": "file",
+      "file": "M\u00e1s masa central exige m\u00e1s velocidad para escapar..md",
+      "x": 3240,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_create_sphere",
+      "type": "file",
+      "file": "_create_sphere().md",
+      "x": 3440,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_draw_axes",
+      "type": "file",
+      "file": "_draw_axes().md",
+      "x": 3640,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_draw_stars",
+      "type": "file",
+      "file": "_draw_stars().md",
+      "x": 3840,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls",
+      "type": "file",
+      "file": "controls.py.md",
+      "x": 3040,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_2",
+      "type": "file",
+      "file": "controls.py \u2014 Controles de entrada del usuario. \u00bfPara qu\u00e9 sirve Ofrecer\u2026.md",
+      "x": 3240,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_create_scene",
+      "type": "file",
+      "file": "create_scene().md",
+      "x": 3440,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d",
+      "type": "file",
+      "file": "scene3d.py.md",
+      "x": 3640,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_rationale_2",
+      "type": "file",
+      "file": "scene3d.py \u2014 Dibuja el sistema en 3D. \u00bfPara qu\u00e9 sirve Mostrar la escena\u2026.md",
+      "x": 3840,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls",
+      "type": "file",
+      "file": "test_controls.py.md",
+      "x": 3040,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls_rationale_2",
+      "type": "file",
+      "file": "test_controls.py \u2014 Pruebas de los controles de la interfaz. \u00bfPara qu\u00e9 sirve\u2026.md",
+      "x": 3240,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls_test_mas_masa_mayor_escape",
+      "type": "file",
+      "file": "test_mas_masa_mayor_escape().md",
+      "x": 3440,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_controls_test_velocidad_de_escape_conocida",
+      "type": "file",
+      "file": "test_velocidad_de_escape_conocida().md",
+      "x": 3640,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_scene3d_update",
+      "type": "file",
+      "file": "update().md",
+      "x": 3840,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_vpython",
+      "type": "file",
+      "file": "vpython.md",
+      "x": 3040,
+      "y": 1300,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g9",
+      "type": "group",
+      "label": "Community 9",
+      "x": 4420,
+      "y": 900,
+      "width": 1100,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_tests_test_app_rationale_114",
+      "type": "file",
+      "file": "Cada cuerpo lleva un halo y un brillo, no un recuadro..md",
+      "x": 4440,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_rationale_106",
+      "type": "file",
+      "file": "Corre el loop de f\u00edsica y devuelve el historial. Recibe bodies  lista de\u2026.md",
+      "x": 4640,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_rationale_69",
+      "type": "file",
+      "file": "Crea la lista de cuerpos a partir de un preset. Recibe preset_name  nombre\u2026.md",
+      "x": 4840,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_135",
+      "type": "file",
+      "file": "El cuadro de la animaci\u00f3n corta el recorrido en el punto actual..md",
+      "x": 5040,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_146",
+      "type": "file",
+      "file": "La vista animada trae cuadros y los botones de reproducir y pausar..md",
+      "x": 5240,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_126",
+      "type": "file",
+      "file": "La vista conserva el giro y el acercamiento del usuario..md",
+      "x": 4440,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_83",
+      "type": "file",
+      "file": "La vista se dibuja sin WebGL no hay trazas 3D..md",
+      "x": 4640,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_95",
+      "type": "file",
+      "file": "La vista trae ejes, estrellas, la \u00f3rbita y los cuerpos como esferas..md",
+      "x": 4840,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_rationale_296",
+      "type": "file",
+      "file": "Vista completa de la \u00f3rbita (sin animaci\u00f3n). Recibe history  historial con la\u2026.md",
+      "x": 5040,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_load_bodies",
+      "type": "file",
+      "file": "load_bodies().md",
+      "x": 5240,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_figures_orbit_figure",
+      "type": "file",
+      "file": "orbit_figure().md",
+      "x": 4440,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_run_simulation",
+      "type": "file",
+      "file": "run_simulation().md",
+      "x": 4640,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_la_animacion_dibuja_solo_el_recorrido_recorrido",
+      "type": "file",
+      "file": "test_la_animacion_dibuja_solo_el_recorrido_recorrido().md",
+      "x": 4840,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_la_animacion_trae_cuadros_y_botones",
+      "type": "file",
+      "file": "test_la_animacion_trae_cuadros_y_botones().md",
+      "x": 5040,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_la_vista_de_la_orbita_no_usa_webgl",
+      "type": "file",
+      "file": "test_la_vista_de_la_orbita_no_usa_webgl().md",
+      "x": 5240,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_la_vista_mantiene_el_acercamiento_entre_cuadros",
+      "type": "file",
+      "file": "test_la_vista_mantiene_el_acercamiento_entre_cuadros().md",
+      "x": 4440,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_la_vista_trae_ejes_estrellas_orbita_y_cuerpos",
+      "type": "file",
+      "file": "test_la_vista_trae_ejes_estrellas_orbita_y_cuerpos().md",
+      "x": 4640,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_los_cuerpos_se_dibujan_con_luz_y_halo",
+      "type": "file",
+      "file": "test_los_cuerpos_se_dibujan_con_luz_y_halo().md",
+      "x": 4840,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g10",
+      "type": "group",
+      "label": "Community 10",
+      "x": 5600,
+      "y": 900,
+      "width": 1100,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_src_ui_app_rationale_150",
+      "type": "file",
+      "file": "Convierte un cuerpo a un diccionario editable para el panel..md",
+      "x": 5620,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_164",
+      "type": "file",
+      "file": "Crea un cuerpo a partir de los valores del panel..md",
+      "x": 5820,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_174",
+      "type": "file",
+      "file": "Cuerpos del escenario inicial, en la forma que usa el panel..md",
+      "x": 6020,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_281",
+      "type": "file",
+      "file": "El texto del panel trae la velocidad circular y la de escape..md",
+      "x": 6220,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_61",
+      "type": "file",
+      "file": "Elegir otro escenario trae los cuerpos de ese preset..md",
+      "x": 6420,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_205",
+      "type": "file",
+      "file": "La simulaci\u00f3n corre con los cuerpos y los par\u00e1metros del panel..md",
+      "x": 5620,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_216",
+      "type": "file",
+      "file": "Si los datos no sirven, el panel no muestra resultados..md",
+      "x": 5820,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_190",
+      "type": "file",
+      "file": "Un cuerpo se convierte a la forma del panel y regresa igual..md",
+      "x": 6020,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_body_to_dict",
+      "type": "file",
+      "file": "body_to_dict().md",
+      "x": 6220,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_dict_to_body",
+      "type": "file",
+      "file": "dict_to_body().md",
+      "x": 6420,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_initial_bodies",
+      "type": "file",
+      "file": "initial_bodies().md",
+      "x": 5620,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app",
+      "type": "file",
+      "file": "test_app.py.md",
+      "x": 5820,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_2",
+      "type": "file",
+      "file": "test_app.py \u2014 Pruebas de la interfaz. \u00bfPara qu\u00e9 sirve Comprobar que el panel\u2026.md",
+      "x": 6020,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_con_datos_invalidos_el_panel_queda_vacio",
+      "type": "file",
+      "file": "test_con_datos_invalidos_el_panel_queda_vacio().md",
+      "x": 6220,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_texto_de_velocidades_menciona_la_de_escape",
+      "type": "file",
+      "file": "test_el_texto_de_velocidades_menciona_la_de_escape().md",
+      "x": 6420,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_elegir_escenario_carga_sus_cuerpos",
+      "type": "file",
+      "file": "test_elegir_escenario_carga_sus_cuerpos().md",
+      "x": 5620,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_iniciar_usa_los_cuerpos_del_panel",
+      "type": "file",
+      "file": "test_iniciar_usa_los_cuerpos_del_panel().md",
+      "x": 5820,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_los_cuerpos_del_panel_van_y_vuelven",
+      "type": "file",
+      "file": "test_los_cuerpos_del_panel_van_y_vuelven().md",
+      "x": 6020,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g11",
+      "type": "group",
+      "label": "Community 11",
+      "x": 6780,
+      "y": 900,
+      "width": 880,
+      "height": 520,
+      "color": "6"
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_100",
+      "type": "file",
+      "file": "Con `record_every` el historial trae menos filas, pero la f\u00edsica es igual..md",
+      "x": 6800,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_85",
+      "type": "file",
+      "file": "Con el mismo escenario, los dos m\u00e9todos conservan E dentro del 1 %..md",
+      "x": 7000,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_92",
+      "type": "file",
+      "file": "Con paso m\u00e1s grueso el error de energ\u00eda es mayor..md",
+      "x": 7200,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_36",
+      "type": "file",
+      "file": "Crea el sistema Sol\u2013Tierra con la Tierra en \u00f3rbita circular._1.md",
+      "x": 7400,
+      "y": 980,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_62",
+      "type": "file",
+      "file": "El historial trae las listas que pide la interfaz..md",
+      "x": 6800,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_75",
+      "type": "file",
+      "file": "En cada fila del historial, E total = cin\u00e9tica + potencial..md",
+      "x": 7000,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_45",
+      "type": "file",
+      "file": "Mayor variaci\u00f3n porcentual de la energ\u00eda durante la corrida..md",
+      "x": 7200,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_sistema",
+      "type": "file",
+      "file": "_sistema().md",
+      "x": 7400,
+      "y": 1060,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_variacion_maxima",
+      "type": "file",
+      "file": "_variacion_maxima().md",
+      "x": 6800,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_distinto_paso_cambia_el_resultado",
+      "type": "file",
+      "file": "test_distinto_paso_cambia_el_resultado().md",
+      "x": 7000,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_el_historial_guarda_tiempo_energia_momento_y_posiciones",
+      "type": "file",
+      "file": "test_el_historial_guarda_tiempo_energia_momento_y_posiciones().md",
+      "x": 7200,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_guardar_cada_ciertos_pasos_reduce_el_historial",
+      "type": "file",
+      "file": "test_guardar_cada_ciertos_pasos_reduce_el_historial().md",
+      "x": 7400,
+      "y": 1140,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_la_energia_se_conserva_con_los_dos_metodos",
+      "type": "file",
+      "file": "test_la_energia_se_conserva_con_los_dos_metodos().md",
+      "x": 6800,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_la_energia_total_es_cinetica_mas_potencial",
+      "type": "file",
+      "file": "test_la_energia_total_es_cinetica_mas_potencial().md",
+      "x": 7000,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation",
+      "type": "file",
+      "file": "test_simulation.py.md",
+      "x": 7200,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_2",
+      "type": "file",
+      "file": "test_simulation.py \u2014 Pruebas del motor de simulaci\u00f3n. \u00bfPara qu\u00e9 sirve\u2026.md",
+      "x": 7400,
+      "y": 1220,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g12",
+      "type": "group",
+      "label": "Community 12",
+      "x": 0,
+      "y": 1600,
+      "width": 880,
+      "height": 520,
+      "color": "1"
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_85",
+      "type": "file",
+      "file": "Con v = 0.8\u00b7v_c a = 1.1e11 m y e = 0.36 (calculados a mano)..md",
+      "x": 20,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_rationale_49",
+      "type": "file",
+      "file": "Elementos de la elipse a partir de las distancias al cuerpo central. Recibe\u2026.md",
+      "x": 220,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_98",
+      "type": "file",
+      "file": "Las \u00e1reas barridas en intervalos iguales var\u00edan menos del 1 %..md",
+      "x": 420,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_60",
+      "type": "file",
+      "file": "Mide el periodo primer regreso del cuerpo a su punto de partida. Devuelve None\u2026.md",
+      "x": 620,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_112",
+      "type": "file",
+      "file": "Para tres radios, T\u00b2a\u00b3 se mantiene cerca de 4\u03c0\u00b2(G\u00b7M)..md",
+      "x": 20,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_43",
+      "type": "file",
+      "file": "Simula una \u00f3rbita y devuelve las posiciones relativas al Sol..md",
+      "x": 220,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_orbita_relativa",
+      "type": "file",
+      "file": "_orbita_relativa().md",
+      "x": 420,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_periodo_circular",
+      "type": "file",
+      "file": "_periodo_circular().md",
+      "x": 620,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_check_first_law",
+      "type": "file",
+      "file": "check_first_law().md",
+      "x": 20,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_numpy",
+      "type": "file",
+      "file": "numpy.md",
+      "x": 220,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler",
+      "type": "file",
+      "file": "test_kepler.py.md",
+      "x": 420,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_rationale_2",
+      "type": "file",
+      "file": "test_kepler.py \u2014 Pruebas de las tres leyes de Kepler. \u00bfPara qu\u00e9 sirve\u2026.md",
+      "x": 620,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_test_primera_ley",
+      "type": "file",
+      "file": "test_primera_ley().md",
+      "x": 20,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_test_segunda_ley",
+      "type": "file",
+      "file": "test_segunda_ley().md",
+      "x": 220,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_kepler_test_tercera_ley",
+      "type": "file",
+      "file": "test_tercera_ley().md",
+      "x": 420,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g13",
+      "type": "group",
+      "label": "Community 13",
+      "x": 1620,
+      "y": 1600,
+      "width": 880,
+      "height": 520,
+      "color": "2"
+    },
+    {
+      "id": "n_src_physics_gravity_rationale_62",
+      "type": "file",
+      "file": "Calcula la aceleraci\u00f3n de cada cuerpo por la atracci\u00f3n de los dem\u00e1s. Recibe\u2026.md",
+      "x": 1640,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_rationale_39",
+      "type": "file",
+      "file": "Crea el Sol en el origen y la Tierra sobre el eje x..md",
+      "x": 1840,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_rationale_46",
+      "type": "file",
+      "file": "La Tierra cae hacia el Sol con a = G\u00b7Mr\u00b2 \u2248 5.931e-3 ms\u00b2..md",
+      "x": 2040,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_rationale_57",
+      "type": "file",
+      "file": "La Tierra est\u00e1 a la derecha del Sol, as\u00ed que acelera hacia la izquierda..md",
+      "x": 2240,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_sol_y_tierra",
+      "type": "file",
+      "file": "_sol_y_tierra().md",
+      "x": 1640,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_gravity_compute_accelerations",
+      "type": "file",
+      "file": "compute_accelerations().md",
+      "x": 1840,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_gravity",
+      "type": "file",
+      "file": "gravity.py.md",
+      "x": 2040,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_gravity_rationale_2",
+      "type": "file",
+      "file": "gravity.py \u2014 Calcula la aceleraci\u00f3n gravitacional. \u00bfPara qu\u00e9 sirve Aplicar la\u2026.md",
+      "x": 2240,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_test_aceleracion_coincide_con_el_calculo_a_mano",
+      "type": "file",
+      "file": "test_aceleracion_coincide_con_el_calculo_a_mano().md",
+      "x": 1640,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity",
+      "type": "file",
+      "file": "test_gravity.py.md",
+      "x": 1840,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_rationale_2",
+      "type": "file",
+      "file": "test_gravity.py \u2014 Pruebas del c\u00e1lculo gravitacional. \u00bfPara qu\u00e9 sirve Comprobar\u2026.md",
+      "x": 2040,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_gravity_test_la_fuerza_atrae",
+      "type": "file",
+      "file": "test_la_fuerza_atrae().md",
+      "x": 2240,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_verlet",
+      "type": "file",
+      "file": "verlet.py.md",
+      "x": 1640,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_verlet_rationale_2",
+      "type": "file",
+      "file": "verlet.py \u2014 Integrador de Verlet. \u00bfPara qu\u00e9 sirve Ser el segundo m\u00e9todo\u2026.md",
+      "x": 1840,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g14",
+      "type": "group",
+      "label": "Community 14",
+      "x": 3020,
+      "y": 1600,
+      "width": 880,
+      "height": 520,
+      "color": "3"
+    },
+    {
+      "id": "n_src_integrators_verlet_rationale_41",
+      "type": "file",
+      "file": "Avanza el estado del sistema un paso `dt` con el m\u00e9todo de Verlet. Recibe\u2026.md",
+      "x": 3040,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_45",
+      "type": "file",
+      "file": "Crea el sistema Sol\u2013Tierra con la Tierra en \u00f3rbita circular..md",
+      "x": 3240,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_54",
+      "type": "file",
+      "file": "Mayor variaci\u00f3n porcentual de la energ\u00eda durante una \u00f3rbita circular..md",
+      "x": 3440,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_66",
+      "type": "file",
+      "file": "Tras un periodo, la Tierra vuelve cerca de su punto de partida..md",
+      "x": 3640,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_77",
+      "type": "file",
+      "file": "Un paso de Verlet cambia la posici\u00f3n y la velocidad de la Tierra..md",
+      "x": 3040,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_87",
+      "type": "file",
+      "file": "Verlet (forma de posici\u00f3n) da la misma energ\u00eda que Euler-Cromer. Los dos son el\u2026.md",
+      "x": 3240,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_error_maximo_de_energia",
+      "type": "file",
+      "file": "_error_maximo_de_energia().md",
+      "x": 3440,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_sistema_tierra",
+      "type": "file",
+      "file": "_sistema_tierra().md",
+      "x": 3640,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_verlet_step",
+      "type": "file",
+      "file": "step()_1.md",
+      "x": 3040,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators",
+      "type": "file",
+      "file": "test_integrators.py.md",
+      "x": 3240,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_rationale_2",
+      "type": "file",
+      "file": "test_integrators.py \u2014 Pruebas de Euler-Cromer y Verlet. \u00bfPara qu\u00e9 sirve\u2026.md",
+      "x": 3440,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_test_orbita_circular_se_cierra",
+      "type": "file",
+      "file": "test_orbita_circular_se_cierra().md",
+      "x": 3640,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_test_verlet_avanza_el_estado",
+      "type": "file",
+      "file": "test_verlet_avanza_el_estado().md",
+      "x": 3040,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_integrators_test_verlet_conserva_la_energia_igual_que_euler_cromer",
+      "type": "file",
+      "file": "test_verlet_conserva_la_energia_igual_que_euler_cromer().md",
+      "x": 3240,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g15",
+      "type": "group",
+      "label": "Community 15",
+      "x": 4420,
+      "y": 1600,
+      "width": 880,
+      "height": 520,
+      "color": "4"
+    },
+    {
+      "id": "n_tests_test_app_rationale_70",
+      "type": "file",
+      "file": "Con una corrida real, las tarjetas y la tabla traen datos..md",
+      "x": 4440,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_116",
+      "type": "file",
+      "file": "Da formato corto a un n\u00famero grande (por ejemplo 5.972e+24)..md",
+      "x": 4640,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_121",
+      "type": "file",
+      "file": "Da formato corto a un vector de tres n\u00fameros..md",
+      "x": 4840,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_553",
+      "type": "file",
+      "file": "Filas de la tabla de datos, repartidas a lo largo de la corrida. Recibe\u2026.md",
+      "x": 5040,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_534",
+      "type": "file",
+      "file": "Tarjetas de resultados del \u00faltimo instante (para el cuerpo que orbita). Recibe\u2026.md",
+      "x": 4440,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_rationale_302",
+      "type": "file",
+      "file": "Todo sale del mismo historial los n\u00fameros tienen que coincidir..md",
+      "x": 4640,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_142",
+      "type": "file",
+      "file": "Una tarjeta de resultado (t\u00edtulo y valor)..md",
+      "x": 4840,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_card",
+      "type": "file",
+      "file": "_card().md",
+      "x": 5040,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_short",
+      "type": "file",
+      "file": "_short().md",
+      "x": 4440,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_short_vector",
+      "type": "file",
+      "file": "_short_vector().md",
+      "x": 4640,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_results_cards",
+      "type": "file",
+      "file": "results_cards().md",
+      "x": 4840,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_table_rows",
+      "type": "file",
+      "file": "table_rows().md",
+      "x": 5040,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_las_tarjetas_y_la_tabla_coinciden_con_las_graficas",
+      "type": "file",
+      "file": "test_las_tarjetas_y_la_tabla_coinciden_con_las_graficas().md",
+      "x": 4440,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_las_tarjetas_y_la_tabla_se_llenan",
+      "type": "file",
+      "file": "test_las_tarjetas_y_la_tabla_se_llenan().md",
+      "x": 4640,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g16",
+      "type": "group",
+      "label": "Community 16",
+      "x": 5600,
+      "y": 1600,
+      "width": 880,
+      "height": 520,
+      "color": "5"
+    },
+    {
+      "id": "n_src_ui_controls_controls_init",
+      "type": "file",
+      "file": "dot-__init__()_1.md",
+      "x": 5620,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls_pause",
+      "type": "file",
+      "file": "dot-_pause().md",
+      "x": 5820,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls_read_sliders",
+      "type": "file",
+      "file": "dot-_read_sliders().md",
+      "x": 6020,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls_restart",
+      "type": "file",
+      "file": "dot-_restart().md",
+      "x": 6220,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls_start",
+      "type": "file",
+      "file": "dot-_start().md",
+      "x": 5620,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls_update_escape_text",
+      "type": "file",
+      "file": "dot-_update_escape_text().md",
+      "x": 5820,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_89",
+      "type": "file",
+      "file": "Bot\u00f3n Iniciar la simulaci\u00f3n avanza..md",
+      "x": 6020,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_93",
+      "type": "file",
+      "file": "Bot\u00f3n Pausar la simulaci\u00f3n se detiene..md",
+      "x": 6220,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_97",
+      "type": "file",
+      "file": "Bot\u00f3n Reiniciar se vuelve al estado inicial con los valores actuales..md",
+      "x": 5620,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_controls",
+      "type": "file",
+      "file": "Controls.md",
+      "x": 5820,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_44",
+      "type": "file",
+      "file": "Crea los deslizadores y los botones. Recibe mass  masa inicial del cuerpo\u2026.md",
+      "x": 6020,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_75",
+      "type": "file",
+      "file": "Lee los deslizadores y actualiza el umbral de escape..md",
+      "x": 6220,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_37",
+      "type": "file",
+      "file": "Los controles de la interfaz deslizadores, botones y valores elegidos. Solo\u2026.md",
+      "x": 5620,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_controls_rationale_81",
+      "type": "file",
+      "file": "Muestra la velocidad de escape con los valores actuales..md",
+      "x": 5820,
+      "y": 1920,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g17",
+      "type": "group",
+      "label": "Community 17",
+      "x": 6780,
+      "y": 1600,
+      "width": 880,
+      "height": 420,
+      "color": "6"
+    },
+    {
+      "id": "n_tests_test_app_rationale_270",
+      "type": "file",
+      "file": "El tipo de \u00f3rbita se deduce de la velocidad frente a la circular..md",
+      "x": 6800,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_659",
+      "type": "file",
+      "file": "Muestra la velocidad circular, la de escape y la que est\u00e1 puesta..md",
+      "x": 7000,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_273",
+      "type": "file",
+      "file": "Texto con la velocidad circular, la de escape y la que est\u00e1 puesta..md",
+      "x": 7200,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_rationale_214",
+      "type": "file",
+      "file": "Tipo de \u00f3rbita seg\u00fan la velocidad, en veces la velocidad circular. Recibe\u2026.md",
+      "x": 7400,
+      "y": 1680,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_gravity_rationale_50",
+      "type": "file",
+      "file": "Velocidad de escape a una distancia del cuerpo central sqrt(2\u00b7G\u00b7Mr). Recibe\u2026.md",
+      "x": 6800,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_gravity_escape_velocity",
+      "type": "file",
+      "file": "escape_velocity().md",
+      "x": 7000,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_orbit_kind",
+      "type": "file",
+      "file": "orbit_kind().md",
+      "x": 7200,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_show_velocities",
+      "type": "file",
+      "file": "show_velocities().md",
+      "x": 7400,
+      "y": 1760,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_el_tipo_de_orbita_sale_de_la_velocidad",
+      "type": "file",
+      "file": "test_el_tipo_de_orbita_sale_de_la_velocidad().md",
+      "x": 6800,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_velocities_text",
+      "type": "file",
+      "file": "velocities_text().md",
+      "x": 7000,
+      "y": 1840,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g18",
+      "type": "group",
+      "label": "Community 18",
+      "x": 0,
+      "y": 2200,
+      "width": 660,
+      "height": 420,
+      "color": "1"
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_rationale_87",
+      "type": "file",
+      "file": "Constante T\u00b2a\u00b3 para varias \u00f3rbitas alrededor del mismo cuerpo central. Recibe\u2026.md",
+      "x": 20,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_check_second_law",
+      "type": "file",
+      "file": "check_second_law().md",
+      "x": 220,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_check_third_law",
+      "type": "file",
+      "file": "check_third_law().md",
+      "x": 420,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws",
+      "type": "file",
+      "file": "kepler_laws.py.md",
+      "x": 20,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_rationale_2",
+      "type": "file",
+      "file": "kepler_laws.py \u2014 Verifica las tres leyes de Kepler. \u00bfPara qu\u00e9 sirve Tomar las\u2026.md",
+      "x": 220,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_swept_area",
+      "type": "file",
+      "file": "swept_area().md",
+      "x": 420,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_rationale_38",
+      "type": "file",
+      "file": "\u00c1rea barrida por el radio vector entre dos posiciones consecutivas. Recibe r1,\u2026.md",
+      "x": 20,
+      "y": 2440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_kepler_laws_rationale_70",
+      "type": "file",
+      "file": "\u00c1reas barridas en intervalos iguales de tiempo. Recibe relative_positions \u2026.md",
+      "x": 220,
+      "y": 2440,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g19",
+      "type": "group",
+      "label": "Community 19",
+      "x": 1620,
+      "y": 2200,
+      "width": 660,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_tests_test_app_rationale_51",
+      "type": "file",
+      "file": "El motor lista los escenarios guardados..md",
+      "x": 1640,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_rationale_55",
+      "type": "file",
+      "file": "Nombres de los escenarios guardados en `presets.json`. Recibe presets_file \u2026.md",
+      "x": 1840,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_json",
+      "type": "file",
+      "file": "json.md",
+      "x": 2040,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_preset_names",
+      "type": "file",
+      "file": "preset_names().md",
+      "x": 1640,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_app_test_los_escenarios_guardados_tienen_nombre",
+      "type": "file",
+      "file": "test_los_escenarios_guardados_tienen_nombre().md",
+      "x": 1840,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g20",
+      "type": "group",
+      "label": "Community 20",
+      "x": 3020,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_src_main_rationale_23",
+      "type": "file",
+      "file": "Arranca la interfaz web..md",
+      "x": 3040,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_main_main",
+      "type": "file",
+      "file": "main()_1.md",
+      "x": 3240,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_main",
+      "type": "file",
+      "file": "main.py.md",
+      "x": 3040,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_main_rationale_2",
+      "type": "file",
+      "file": "main.py \u2014 Lanzador de la interfaz. \u00bfPara qu\u00e9 sirve Arrancar la aplicaci\u00f3n web\u2026.md",
+      "x": 3240,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g21",
+      "type": "group",
+      "label": "Community 21",
+      "x": 4420,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_51",
+      "type": "file",
+      "file": "365 d\u00edas con paso de 1 d\u00eda son 365 pasos..md",
+      "x": 4440,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_rationale_94",
+      "type": "file",
+      "file": "Cu\u00e1ntos pasos de tama\u00f1o `dt` caben en `total_time`. Recibe total_time \u2026.md",
+      "x": 4640,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_total_steps",
+      "type": "file",
+      "file": "test_total_steps().md",
+      "x": 4440,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_simulation_total_steps",
+      "type": "file",
+      "file": "total_steps().md",
+      "x": 4640,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g22",
+      "type": "group",
+      "label": "Community 22",
+      "x": 5600,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_src_ui_app_rationale_592",
+      "type": "file",
+      "file": "Pide al navegador que no guarde copias de las respuestas. Si no, al reiniciar\u2026.md",
+      "x": 5620,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_ui_app_sin_copias",
+      "type": "file",
+      "file": "_sin_copias().md",
+      "x": 5820,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_after_request",
+      "type": "file",
+      "file": "after_request.md",
+      "x": 5620,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g23",
+      "type": "group",
+      "label": "Community 23",
+      "x": 6780,
+      "y": 2200,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_build_hooks_hook_vpython",
+      "type": "file",
+      "file": "hook-vpython.py.md",
+      "x": 6800,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_build_hooks_hook_vpython_rationale_2",
+      "type": "file",
+      "file": "hook-vpython.py \u2014 Hook de PyInstaller para VPython. \u00bfPara qu\u00e9 sirve Indicarle\u2026.md",
+      "x": 7000,
+      "y": 2280,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_pyinstaller_utils_hooks",
+      "type": "file",
+      "file": "pyinstaller_utils_hooks.md",
+      "x": 6800,
+      "y": 2360,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g24",
+      "type": "group",
+      "label": "Community 24",
+      "x": 0,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_scripts_descargar_texturas",
+      "type": "file",
+      "file": "descargar_texturas.sh.md",
+      "x": 20,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_scripts_descargar_texturas_sh__entry",
+      "type": "file",
+      "file": "descargar_texturas.sh script.md",
+      "x": 220,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g25",
+      "type": "group",
+      "label": "Community 25",
+      "x": 1620,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_src_init_rationale_2",
+      "type": "file",
+      "file": "Paquete raiz del simulador orbital. \u00bfPara qu\u00e9 sirve Marca la carpeta `src`\u2026.md",
+      "x": 1640,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_init",
+      "type": "file",
+      "file": "src__init__.py.md",
+      "x": 1840,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g26",
+      "type": "group",
+      "label": "Community 26",
+      "x": 3020,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "3"
+    },
+    {
+      "id": "n_src_integrators_init_rationale_2",
+      "type": "file",
+      "file": "Paquete `integrators` \u2014 responde \u00bfc\u00f3mo avanza el tiempo Contiene los metodos\u2026.md",
+      "x": 3040,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_integrators_init",
+      "type": "file",
+      "file": "integrators__init__.py.md",
+      "x": 3240,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g27",
+      "type": "group",
+      "label": "Community 27",
+      "x": 4420,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "4"
+    },
+    {
+      "id": "n_src_kepler_init_rationale_2",
+      "type": "file",
+      "file": "Paquete `kepler` \u2014 responde \u00bfse cumplen las leyes Contiene el analisis que\u2026.md",
+      "x": 4440,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_kepler_init",
+      "type": "file",
+      "file": "kepler__init__.py.md",
+      "x": 4640,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g28",
+      "type": "group",
+      "label": "Community 28",
+      "x": 5600,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "5"
+    },
+    {
+      "id": "n_src_physics_bodies_body_init",
+      "type": "file",
+      "file": "dot-__init__().md",
+      "x": 5620,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_bodies_rationale_48",
+      "type": "file",
+      "file": "Guarda los datos iniciales de un cuerpo. Recibe name  nombre del cuerpo, por\u2026.md",
+      "x": 5820,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g29",
+      "type": "group",
+      "label": "Community 29",
+      "x": 6780,
+      "y": 2700,
+      "width": 600,
+      "height": 400,
+      "color": "6"
+    },
+    {
+      "id": "n_src_physics_init_rationale_2",
+      "type": "file",
+      "file": "Paquete `physics` \u2014 responde \u00bfc\u00f3mo interact\u00faan los cuerpos Contiene la\u2026.md",
+      "x": 6800,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_physics_init",
+      "type": "file",
+      "file": "physics__init__.py.md",
+      "x": 7000,
+      "y": 2780,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g30",
+      "type": "group",
+      "label": "Community 30",
+      "x": 0,
+      "y": 3180,
+      "width": 600,
+      "height": 400,
+      "color": "1"
+    },
+    {
+      "id": "n_src_render_init_rationale_2",
+      "type": "file",
+      "file": "Paquete `render` \u2014 responde \u00bfqu\u00e9 ve el usuario Contiene la representacion\u2026.md",
+      "x": 20,
+      "y": 3260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_src_render_init",
+      "type": "file",
+      "file": "render__init__.py.md",
+      "x": 220,
+      "y": 3260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "g31",
+      "type": "group",
+      "label": "Community 31",
+      "x": 1620,
+      "y": 3180,
+      "width": 600,
+      "height": 400,
+      "color": "2"
+    },
+    {
+      "id": "n_tests_test_simulation_rationale_56",
+      "type": "file",
+      "file": "El motor ofrece Euler-Cromer y Verlet..md",
+      "x": 1640,
+      "y": 3260,
+      "width": 180,
+      "height": 60
+    },
+    {
+      "id": "n_tests_test_simulation_test_los_dos_metodos_estan_disponibles",
+      "type": "file",
+      "file": "test_los_dos_metodos_estan_disponibles().md",
+      "x": 1840,
+      "y": 3260,
+      "width": 180,
+      "height": 60
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_github_workflows_build_installers_github_workflows_build_installers_jobs",
+      "fromNode": "n_github_workflows_build_installers",
+      "toNode": "n_github_workflows_build_installers_jobs",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_github_workflows_build_installers_name",
+      "fromNode": "n_github_workflows_build_installers",
+      "toNode": "n_github_workflows_build_installers_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_github_workflows_build_installers_on",
+      "fromNode": "n_github_workflows_build_installers",
+      "toNode": "n_github_workflows_build_installers_on",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_on_github_workflows_build_installers_on_push",
+      "fromNode": "n_github_workflows_build_installers_on",
+      "toNode": "n_github_workflows_build_installers_on_push",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_on_github_workflows_build_installers_on_workflow_dispatch",
+      "fromNode": "n_github_workflows_build_installers_on",
+      "toNode": "n_github_workflows_build_installers_on_workflow_dispatch",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_on_push_github_workflows_build_installers_push_tags",
+      "fromNode": "n_github_workflows_build_installers_on_push",
+      "toNode": "n_github_workflows_build_installers_push_tags",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_jobs_github_workflows_build_installers_jobs_build",
+      "fromNode": "n_github_workflows_build_installers_jobs",
+      "toNode": "n_github_workflows_build_installers_jobs_build",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_jobs_build_github_workflows_build_installers_build_runs_on",
+      "fromNode": "n_github_workflows_build_installers_jobs_build",
+      "toNode": "n_github_workflows_build_installers_build_runs_on",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_jobs_build_github_workflows_build_installers_build_steps",
+      "fromNode": "n_github_workflows_build_installers_jobs_build",
+      "toNode": "n_github_workflows_build_installers_build_steps",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_jobs_build_github_workflows_build_installers_build_strategy",
+      "fromNode": "n_github_workflows_build_installers_jobs_build",
+      "toNode": "n_github_workflows_build_installers_build_strategy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_strategy_github_workflows_build_installers_strategy_fail_fast",
+      "fromNode": "n_github_workflows_build_installers_build_strategy",
+      "toNode": "n_github_workflows_build_installers_strategy_fail_fast",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_strategy_github_workflows_build_installers_strategy_matrix",
+      "fromNode": "n_github_workflows_build_installers_build_strategy",
+      "toNode": "n_github_workflows_build_installers_strategy_matrix",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_strategy_matrix_github_workflows_build_installers_matrix_os",
+      "fromNode": "n_github_workflows_build_installers_strategy_matrix",
+      "toNode": "n_github_workflows_build_installers_matrix_os",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_steps_github_workflows_build_installers_steps_name",
+      "fromNode": "n_github_workflows_build_installers_build_steps",
+      "toNode": "n_github_workflows_build_installers_steps_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_steps_github_workflows_build_installers_steps_run",
+      "fromNode": "n_github_workflows_build_installers_build_steps",
+      "toNode": "n_github_workflows_build_installers_steps_run",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_steps_github_workflows_build_installers_steps_uses",
+      "fromNode": "n_github_workflows_build_installers_build_steps",
+      "toNode": "n_github_workflows_build_installers_steps_uses",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_build_steps_github_workflows_build_installers_steps_with",
+      "fromNode": "n_github_workflows_build_installers_build_steps",
+      "toNode": "n_github_workflows_build_installers_steps_with",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_steps_with_github_workflows_build_installers_with_name",
+      "fromNode": "n_github_workflows_build_installers_steps_with",
+      "toNode": "n_github_workflows_build_installers_with_name",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_steps_with_github_workflows_build_installers_with_path",
+      "fromNode": "n_github_workflows_build_installers_steps_with",
+      "toNode": "n_github_workflows_build_installers_with_path",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_github_workflows_build_installers_steps_with_github_workflows_build_installers_with_python_version",
+      "fromNode": "n_github_workflows_build_installers_steps_with",
+      "toNode": "n_github_workflows_build_installers_with_python_version",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_build_hooks_hook_vpython_pyinstaller_utils_hooks",
+      "fromNode": "n_build_hooks_hook_vpython",
+      "toNode": "n_pyinstaller_utils_hooks",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_build_hooks_hook_vpython_rationale_2_build_hooks_hook_vpython",
+      "fromNode": "n_build_hooks_hook_vpython_rationale_2",
+      "toNode": "n_build_hooks_hook_vpython",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_descargar_texturas_scripts_descargar_texturas_sh__entry",
+      "fromNode": "n_scripts_descargar_texturas",
+      "toNode": "n_scripts_descargar_texturas_sh__entry",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_fpdf",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_fpdf",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_markdown",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_markdown",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_pathlib",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_pathlib",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_re",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_re",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_scripts_generar_pdf_encontrar_fuente",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_scripts_generar_pdf_encontrar_fuente",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_scripts_generar_pdf_limpiar_celdas",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_scripts_generar_pdf_limpiar_celdas",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_scripts_generar_pdf_main",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_scripts_generar_pdf_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_sys",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_sys",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_warnings",
+      "fromNode": "n_scripts_generar_pdf",
+      "toNode": "n_warnings",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_convertir_markdown_a_pdf_scripts_generar_pdf_encontrar_fuente",
+      "fromNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "toNode": "n_scripts_generar_pdf_encontrar_fuente",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_encontrar_fuente_path",
+      "fromNode": "n_scripts_generar_pdf_encontrar_fuente",
+      "toNode": "n_path",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_rationale_53_scripts_generar_pdf_encontrar_fuente",
+      "fromNode": "n_scripts_generar_pdf_rationale_53",
+      "toNode": "n_scripts_generar_pdf_encontrar_fuente",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_convertir_markdown_a_pdf_path",
+      "fromNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "toNode": "n_path",
+      "label": "references [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_convertir_markdown_a_pdf_scripts_generar_pdf_limpiar_celdas",
+      "fromNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "toNode": "n_scripts_generar_pdf_limpiar_celdas",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_limpiar_celdas_re",
+      "fromNode": "n_scripts_generar_pdf_limpiar_celdas",
+      "toNode": "n_re",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_limpiar_celdas_scripts_generar_pdf_limpiar_celdas_limpiar",
+      "fromNode": "n_scripts_generar_pdf_limpiar_celdas",
+      "toNode": "n_scripts_generar_pdf_limpiar_celdas_limpiar",
+      "label": "indirect_call [INFERRED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_rationale_68_scripts_generar_pdf_limpiar_celdas",
+      "fromNode": "n_scripts_generar_pdf_rationale_68",
+      "toNode": "n_scripts_generar_pdf_limpiar_celdas",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_convertir_markdown_a_pdf_markdown",
+      "fromNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "toNode": "n_markdown",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_convertir_markdown_a_pdf_re",
+      "fromNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "toNode": "n_re",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_main_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "fromNode": "n_scripts_generar_pdf_main",
+      "toNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_rationale_83_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "fromNode": "n_scripts_generar_pdf_rationale_83",
+      "toNode": "n_scripts_generar_pdf_convertir_markdown_a_pdf",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_scripts_generar_pdf_main_sys",
+      "fromNode": "n_scripts_generar_pdf_main",
+      "toNode": "n_sys",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_init_rationale_2_src_init",
+      "fromNode": "n_src_init_rationale_2",
+      "toNode": "n_src_init",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_config_pathlib",
+      "fromNode": "n_src_config",
+      "toNode": "n_pathlib",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_config_src_config_project_root",
+      "fromNode": "n_src_config",
+      "toNode": "n_src_config_project_root",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_config_sys",
+      "fromNode": "n_src_config",
+      "toNode": "n_sys",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_config_rationale_2_src_config",
+      "fromNode": "n_src_config_rationale_2",
+      "toNode": "n_src_config",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_config",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_config",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_app_src_config",
+      "fromNode": "n_src_ui_app",
+      "toNode": "n_src_config",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_config_rationale_24_src_config_project_root",
+      "fromNode": "n_src_config_rationale_24",
+      "toNode": "n_src_config_project_root",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_config_project_root",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_config_project_root",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_app_src_config_project_root",
+      "fromNode": "n_src_ui_app",
+      "toNode": "n_src_config_project_root",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_app_src_config_project_root",
+      "fromNode": "n_tests_test_app",
+      "toNode": "n_src_config_project_root",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_app_test_el_estilo_se_adapta_a_pantallas_pequenas_src_config_project_root",
+      "fromNode": "n_tests_test_app_test_el_estilo_se_adapta_a_pantallas_pequenas",
+      "toNode": "n_src_config_project_root",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_init_rationale_2_src_integrators_init",
+      "fromNode": "n_src_integrators_init_rationale_2",
+      "toNode": "n_src_integrators_init",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_src_integrators_euler_cromer_step",
+      "fromNode": "n_src_integrators_euler_cromer",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_src_physics_gravity",
+      "fromNode": "n_src_integrators_euler_cromer",
+      "toNode": "n_src_physics_gravity",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_src_physics_gravity_compute_accelerations",
+      "fromNode": "n_src_integrators_euler_cromer",
+      "toNode": "n_src_physics_gravity_compute_accelerations",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_rationale_2_src_integrators_euler_cromer",
+      "fromNode": "n_src_integrators_euler_cromer_rationale_2",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_src_integrators_euler_cromer",
+      "fromNode": "n_src_integrators_verlet",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_integrators_euler_cromer",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_src_integrators_euler_cromer",
+      "fromNode": "n_tests_scenarios_test_scenario_circular",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_src_integrators_euler_cromer",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_src_integrators_euler_cromer",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_integrators_euler_cromer",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_integrators_euler_cromer",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_integrators_euler_cromer",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_integrators_euler_cromer",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_rationale_34_src_integrators_euler_cromer_step",
+      "fromNode": "n_src_integrators_euler_cromer_rationale_34",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_euler_cromer_step_src_physics_gravity_compute_accelerations",
+      "fromNode": "n_src_integrators_euler_cromer_step",
+      "toNode": "n_src_physics_gravity_compute_accelerations",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_src_integrators_euler_cromer_step",
+      "fromNode": "n_src_integrators_verlet",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_step_src_integrators_euler_cromer_step",
+      "fromNode": "n_src_integrators_verlet_step",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_integrators_euler_cromer_step",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_circular",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_test_radio_casi_constante_y_orbita_cerrada_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_circular_test_radio_casi_constante_y_orbita_cerrada",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_test_orbita_eliptica_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical_test_orbita_eliptica",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_test_trayectoria_hiperbolica_escapa_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic_test_trayectoria_hiperbolica_escapa",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_orbita_circular_conserva_energia_y_momento_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_conservation_test_orbita_circular_conserva_energia_y_momento",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_test_orbita_circular_se_cierra_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_integrators_test_orbita_circular_se_cierra",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_orbita_relativa_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_kepler_orbita_relativa",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_periodo_circular_src_integrators_euler_cromer_step",
+      "fromNode": "n_tests_test_kepler_periodo_circular",
+      "toNode": "n_src_integrators_euler_cromer_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_src_integrators_verlet_step",
+      "fromNode": "n_src_integrators_verlet",
+      "toNode": "n_src_integrators_verlet_step",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_src_physics_gravity",
+      "fromNode": "n_src_integrators_verlet",
+      "toNode": "n_src_physics_gravity",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_src_physics_gravity_compute_accelerations",
+      "fromNode": "n_src_integrators_verlet",
+      "toNode": "n_src_physics_gravity_compute_accelerations",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_rationale_2_src_integrators_verlet",
+      "fromNode": "n_src_integrators_verlet_rationale_2",
+      "toNode": "n_src_integrators_verlet",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_integrators_verlet",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_integrators_verlet",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_integrators_verlet",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_integrators_verlet",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_rationale_41_src_integrators_verlet_step",
+      "fromNode": "n_src_integrators_verlet_rationale_41",
+      "toNode": "n_src_integrators_verlet_step",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_integrators_verlet_step_src_physics_gravity_compute_accelerations",
+      "fromNode": "n_src_integrators_verlet_step",
+      "toNode": "n_src_physics_gravity_compute_accelerations",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_integrators_verlet_step",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_integrators_verlet_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_integrators_verlet_step",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_integrators_verlet_step",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_test_verlet_avanza_el_estado_src_integrators_verlet_step",
+      "fromNode": "n_tests_test_integrators_test_verlet_avanza_el_estado",
+      "toNode": "n_src_integrators_verlet_step",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_init_rationale_2_src_kepler_init",
+      "fromNode": "n_src_kepler_init_rationale_2",
+      "toNode": "n_src_kepler_init",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_numpy",
+      "fromNode": "n_src_kepler_kepler_laws",
+      "toNode": "n_numpy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_src_kepler_kepler_laws_check_first_law",
+      "fromNode": "n_src_kepler_kepler_laws",
+      "toNode": "n_src_kepler_kepler_laws_check_first_law",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_src_kepler_kepler_laws",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_src_kepler_kepler_laws_check_third_law",
+      "fromNode": "n_src_kepler_kepler_laws",
+      "toNode": "n_src_kepler_kepler_laws_check_third_law",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_src_kepler_kepler_laws_swept_area",
+      "fromNode": "n_src_kepler_kepler_laws",
+      "toNode": "n_src_kepler_kepler_laws_swept_area",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_rationale_2_src_kepler_kepler_laws",
+      "fromNode": "n_src_kepler_kepler_laws_rationale_2",
+      "toNode": "n_src_kepler_kepler_laws",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_figures_src_kepler_kepler_laws",
+      "fromNode": "n_src_ui_figures",
+      "toNode": "n_src_kepler_kepler_laws",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_kepler_kepler_laws",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_kepler_kepler_laws",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_check_second_law_src_kepler_kepler_laws_swept_area",
+      "fromNode": "n_src_kepler_kepler_laws_check_second_law",
+      "toNode": "n_src_kepler_kepler_laws_swept_area",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_rationale_38_src_kepler_kepler_laws_swept_area",
+      "fromNode": "n_src_kepler_kepler_laws_rationale_38",
+      "toNode": "n_src_kepler_kepler_laws_swept_area",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_swept_area_numpy",
+      "fromNode": "n_src_kepler_kepler_laws_swept_area",
+      "toNode": "n_numpy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_rationale_49_src_kepler_kepler_laws_check_first_law",
+      "fromNode": "n_src_kepler_kepler_laws_rationale_49",
+      "toNode": "n_src_kepler_kepler_laws_check_first_law",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_kepler_kepler_laws_check_first_law",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_kepler_kepler_laws_check_first_law",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_test_primera_ley_src_kepler_kepler_laws_check_first_law",
+      "fromNode": "n_tests_test_kepler_test_primera_ley",
+      "toNode": "n_src_kepler_kepler_laws_check_first_law",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_rationale_70_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_src_kepler_kepler_laws_rationale_70",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_figures_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_src_ui_figures",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_figures_kepler_figure_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_src_ui_figures_kepler_figure",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_test_segunda_ley_src_kepler_kepler_laws_check_second_law",
+      "fromNode": "n_tests_test_kepler_test_segunda_ley",
+      "toNode": "n_src_kepler_kepler_laws_check_second_law",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_kepler_kepler_laws_rationale_87_src_kepler_kepler_laws_check_third_law",
+      "fromNode": "n_src_kepler_kepler_laws_rationale_87",
+      "toNode": "n_src_kepler_kepler_laws_check_third_law",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_kepler_kepler_laws_check_third_law",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_kepler_kepler_laws_check_third_law",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_test_tercera_ley_src_kepler_kepler_laws_check_third_law",
+      "fromNode": "n_tests_test_kepler_test_tercera_ley",
+      "toNode": "n_src_kepler_kepler_laws_check_third_law",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_main_src_main_main",
+      "fromNode": "n_src_main",
+      "toNode": "n_src_main_main",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_main_src_ui_app",
+      "fromNode": "n_src_main",
+      "toNode": "n_src_ui_app",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_main_rationale_2_src_main",
+      "fromNode": "n_src_main_rationale_2",
+      "toNode": "n_src_main",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_main_rationale_23_src_main_main",
+      "fromNode": "n_src_main_rationale_23",
+      "toNode": "n_src_main_main",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_init_rationale_2_src_physics_init",
+      "fromNode": "n_src_physics_init_rationale_2",
+      "toNode": "n_src_physics_init",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_numpy",
+      "fromNode": "n_src_physics_bodies",
+      "toNode": "n_numpy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_src_physics_bodies_body",
+      "fromNode": "n_src_physics_bodies",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_rationale_2_src_physics_bodies",
+      "fromNode": "n_src_physics_bodies_rationale_2",
+      "toNode": "n_src_physics_bodies",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_physics_bodies",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_app_src_physics_bodies",
+      "fromNode": "n_src_ui_app",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_src_physics_bodies",
+      "fromNode": "n_tests_scenarios_test_scenario_circular",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_src_physics_bodies",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_src_physics_bodies",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_app_src_physics_bodies",
+      "fromNode": "n_tests_test_app",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_bodies_src_physics_bodies",
+      "fromNode": "n_tests_test_bodies",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_physics_bodies",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_gravity_src_physics_bodies",
+      "fromNode": "n_tests_test_gravity",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_physics_bodies",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_physics_bodies",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_simulation_src_physics_bodies",
+      "fromNode": "n_tests_test_simulation",
+      "toNode": "n_src_physics_bodies",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_body_src_physics_bodies_body_init",
+      "fromNode": "n_src_physics_bodies_body",
+      "toNode": "n_src_physics_bodies_body_init",
+      "label": "method [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_rationale_45_src_physics_bodies_body",
+      "fromNode": "n_src_physics_bodies_rationale_45",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_physics_bodies_body",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_load_bodies_src_physics_bodies_body",
+      "fromNode": "n_src_simulation_load_bodies",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_app_src_physics_bodies_body",
+      "fromNode": "n_src_ui_app",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_ui_app_dict_to_body_src_physics_bodies_body",
+      "fromNode": "n_src_ui_app_dict_to_body",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_circular",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_circular_test_radio_casi_constante_y_orbita_cerrada_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_circular_test_radio_casi_constante_y_orbita_cerrada",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_elliptical_test_orbita_eliptica_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_elliptical_test_orbita_eliptica",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_test_trayectoria_hiperbolica_escapa_src_physics_bodies_body",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic_test_trayectoria_hiperbolica_escapa",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_app_src_physics_bodies_body",
+      "fromNode": "n_tests_test_app",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_app_test_los_cuerpos_del_panel_van_y_vuelven_src_physics_bodies_body",
+      "fromNode": "n_tests_test_app_test_los_cuerpos_del_panel_van_y_vuelven",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_bodies_src_physics_bodies_body",
+      "fromNode": "n_tests_test_bodies",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_bodies_test_guarda_los_datos_iniciales_src_physics_bodies_body",
+      "fromNode": "n_tests_test_bodies_test_guarda_los_datos_iniciales",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_physics_bodies_body",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_energia_cinetica_src_physics_bodies_body",
+      "fromNode": "n_tests_test_conservation_test_energia_cinetica",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_energia_potencial_src_physics_bodies_body",
+      "fromNode": "n_tests_test_conservation_test_energia_potencial",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_momento_angular_src_physics_bodies_body",
+      "fromNode": "n_tests_test_conservation_test_momento_angular",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_orbita_circular_conserva_energia_y_momento_src_physics_bodies_body",
+      "fromNode": "n_tests_test_conservation_test_orbita_circular_conserva_energia_y_momento",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_gravity_src_physics_bodies_body",
+      "fromNode": "n_tests_test_gravity",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_gravity_sol_y_tierra_src_physics_bodies_body",
+      "fromNode": "n_tests_test_gravity_sol_y_tierra",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_physics_bodies_body",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_sistema_tierra_src_physics_bodies_body",
+      "fromNode": "n_tests_test_integrators_sistema_tierra",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_src_physics_bodies_body",
+      "fromNode": "n_tests_test_kepler",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_orbita_relativa_src_physics_bodies_body",
+      "fromNode": "n_tests_test_kepler_orbita_relativa",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_kepler_periodo_circular_src_physics_bodies_body",
+      "fromNode": "n_tests_test_kepler_periodo_circular",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_simulation_src_physics_bodies_body",
+      "fromNode": "n_tests_test_simulation",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_simulation_sistema_src_physics_bodies_body",
+      "fromNode": "n_tests_test_simulation_sistema",
+      "toNode": "n_src_physics_bodies_body",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_bodies_rationale_48_src_physics_bodies_body_init",
+      "fromNode": "n_src_physics_bodies_rationale_48",
+      "toNode": "n_src_physics_bodies_body_init",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_numpy",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_numpy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_conservation_angular_momentum",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_conservation_angular_momentum",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_conservation_mechanical_energy",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_conservation_mechanical_energy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_conservation_potential_energy",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_conservation_relative_error",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_conservation_relative_error",
+      "label": "contains [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_src_physics_gravity",
+      "fromNode": "n_src_physics_conservation",
+      "toNode": "n_src_physics_gravity",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_rationale_2_src_physics_conservation",
+      "fromNode": "n_src_physics_conservation_rationale_2",
+      "toNode": "n_src_physics_conservation",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_render_plots_src_physics_conservation",
+      "fromNode": "n_src_render_plots",
+      "toNode": "n_src_physics_conservation",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_physics_conservation",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_physics_conservation",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_scenarios_test_scenario_hyperbolic_src_physics_conservation",
+      "fromNode": "n_tests_scenarios_test_scenario_hyperbolic",
+      "toNode": "n_src_physics_conservation",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_physics_conservation",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_physics_conservation",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_integrators_src_physics_conservation",
+      "fromNode": "n_tests_test_integrators",
+      "toNode": "n_src_physics_conservation",
+      "label": "imports_from [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_kinetic_energy_numpy",
+      "fromNode": "n_src_physics_conservation_kinetic_energy",
+      "toNode": "n_numpy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_mechanical_energy_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_src_physics_conservation_mechanical_energy",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_rationale_44_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_src_physics_conservation_rationale_44",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_run_simulation_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_src_simulation_run_simulation",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_energia_cinetica_src_physics_conservation_kinetic_energy",
+      "fromNode": "n_tests_test_conservation_test_energia_cinetica",
+      "toNode": "n_src_physics_conservation_kinetic_energy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_mechanical_energy_src_physics_conservation_potential_energy",
+      "fromNode": "n_src_physics_conservation_mechanical_energy",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_src_physics_conservation_rationale_55_src_physics_conservation_potential_energy",
+      "fromNode": "n_src_physics_conservation_rationale_55",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "rationale_for [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_src_physics_conservation_potential_energy",
+      "fromNode": "n_src_simulation",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_src_simulation_run_simulation_src_physics_conservation_potential_energy",
+      "fromNode": "n_src_simulation_run_simulation",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "calls [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_src_physics_conservation_potential_energy",
+      "fromNode": "n_tests_test_conservation",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "imports [EXTRACTED]"
+    },
+    {
+      "id": "e_tests_test_conservation_test_energia_potencial_src_physics_conservation_potential_energy",
+      "fromNode": "n_tests_test_conservation_test_energia_potencial",
+      "toNode": "n_src_physics_conservation_potential_energy",
+      "label": "calls [EXTRACTED]"
+    }
+  ]
+}

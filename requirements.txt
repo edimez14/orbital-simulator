@@ -9,4 +9,11 @@ numpy
 matplotlib
 
 # Visualizacion 3D interactiva orientada a fisica (escena y controles).
+# Se retira al terminar la app Dash (tareas 5 a 9).
 vpython
+
+# Aplicacion web de la interfaz (panel del boceto).
+dash
+
+# Graficas interactivas dentro de la interfaz.
+plotly

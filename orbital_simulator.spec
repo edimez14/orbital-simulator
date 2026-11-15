@@ -4,54 +4,49 @@
 
 ¿Para qué sirve?
     Le dice a PyInstaller cómo empaquetar el simulador en un ejecutable que
-    funcione SIN tener Python instalado. Es la receta del "instalador".
+    funcione SIN tener Python instalado.
 
 ¿Por qué existe?
-    PyInstaller no adivina todo. Este archivo declara el punto de entrada, los
-    hooks y los datos que hay que incluir (sobre todo los de VPython).
+    PyInstaller no adivina todo. Este archivo declara el punto de entrada y los
+    datos que hay que incluir: la interfaz (Dash y Plotly), la carpeta `assets/`
+    (estilo del panel) y `data/` (escenarios).
 
 ¿Cómo se usa?
-    Desde la raiz del proyecto:
+    Desde la raíz del proyecto:
         pyinstaller orbital_simulator.spec
     El resultado queda en dist/orbital-simulator/.
 
 ¿Cómo funciona paso a paso?
-    1. Analysis   : lee src/main.py y descubre los modulos y datos necesarios.
+    1. Analysis   : lee src/main.py y descubre los módulos y datos necesarios.
     2. PYZ        : empaqueta el bytecode de Python.
     3. EXE        : construye el ejecutable.
     4. COLLECT    : junta el ejecutable con sus archivos en una carpeta.
 
-Nota sobre VPython (importante)
-    VPython 7 corre un servidor local y manda la escena 3D a un navegador. Sus
-    archivos internos (JavaScript/WebGL) hay que incluirlos aparte; por eso se usa
-    el hook en build_hooks/hook-vpython.py.
-
 ¿Cómo modificarlo?
     - Cambiar el icono: reemplazar `icon=` por la ruta de un .ico/.icns.
     - Pasar a un solo archivo: usar EXE con `a.binaries` y `a.datas` incluidos
-      y quitar el COLLECT (mas portable, pero mas lento al abrir).
-    - Anadir datos (por ejemplo data/presets.json): agregarlos a `datas`.
-
-ESTADO: andamiaje. Se completa y prueba cuando main.py tenga codigo funcional.
+      y quitar el COLLECT (más portable, pero más lento al abrir).
 """
 
-import os
+from PyInstaller.utils.hooks import collect_all
 
-# Carpeta con los hooks personalizados (por ejemplo el de VPython).
-# SPECPATH es una variable que PyInstaller inyecta al leer este archivo.
-hook_dir = os.path.join(SPECPATH, "build_hooks")
+# Dash y Plotly traen archivos web (JavaScript y plantillas) que no se detectan
+# solos al analizar los `import`.
+dash_datas, dash_binaries, dash_hiddenimports = collect_all("dash")
+plotly_datas, plotly_binaries, plotly_hiddenimports = collect_all("plotly")
 
-# 1. Analisis: punto de entrada y que incluir.
+# 1. Análisis: punto de entrada y qué incluir.
 a = Analysis(
     ["src/main.py"],
     pathex=[],
-    binaries=[],
-    datas=[],
-    hiddenimports=[],
-    hookspath=[hook_dir],
+    binaries=dash_binaries + plotly_binaries,
+    datas=dash_datas + plotly_datas + [("assets", "assets"), ("data", "data")],
+    hiddenimports=dash_hiddenimports + plotly_hiddenimports,
+    hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[],
+    # VPython y Matplotlib quedaron de etapas anteriores; no los usa la interfaz.
+    excludes=["vpython", "matplotlib", "tkinter", "IPython", "jupyter", "pytest"],
     noarchive=False,
 )
 

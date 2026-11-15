@@ -6,19 +6,22 @@ ni librerías. Se logra con un **ejecutable creado por PyInstaller**.
 
 ## Por qué un ejecutable y no Docker
 
-VPython 7 no abre una ventana nativa: corre un **servidor local** y muestra la
-escena 3D en el **navegador**. Un ejecutable de escritorio encaja directo con eso
-(el usuario hace doble clic y se abre el navegador). Docker obligaría al usuario a
-tenerlo instalado y a manejar el puerto del servidor a mano.
+La interfaz es una **app web local** (Dash): al abrirla se levanta un servidor en la
+propia máquina y el navegador muestra el panel. Un ejecutable de escritorio encaja
+directo con eso (el usuario hace doble clic y se abre el navegador). Docker obligaría
+al usuario a tenerlo instalado y a manejar el puerto a mano.
 
 ## Archivos que intervienen
 
 | Archivo | Para qué sirve |
 |---------|----------------|
 | `orbital_simulator.spec` | Receta de PyInstaller (punto de entrada + qué incluir). |
-| `build_hooks/hook-vpython.py` | Incluye los archivos internos de VPython. |
+| `build_hooks/hook-vpython.py` | Queda de la etapa VPython; se retira con ella. |
 | `requirements-dev.txt` | Incluye `pyinstaller` para poder compilar. |
 | `.github/workflows/build-installers.yml` | Compila para Windows, macOS y Linux. |
+
+Al empaquetar hay que incluir los archivos de Dash y Plotly y la carpeta `assets/`
+(estilo del panel). Eso se ajusta en la Tarea 12.
 
 ## Cómo compilar en tu máquina
 
@@ -54,11 +57,12 @@ prefiere un **único archivo**, se ajusta la receta `orbital_simulator.spec`
 
 ## Nota importante
 
-VPython usa el navegador para mostrar la escena 3D. El ejecutable necesita que la
-máquina tenga un navegador (cualquiera tiene uno). No requiere pantalla especial
-ni dependencias de sistema.
+La interfaz es un servidor local (Dash) y se ve en el navegador. El ejecutable
+necesita que la máquina tenga un navegador (cualquiera tiene uno). No requiere
+pantalla especial ni dependencias de sistema.
 
 ## Estado
 
-Andamiaje listo. La compilación real se prueba cuando `src/main.py` tenga código
-funcional.
+Andamiaje listo. La compilación real es la Tarea 12 de `docs/tareas_cambios.md`: hay
+que ajustar la receta para incluir los archivos de Dash y Plotly y la carpeta
+`assets/`.

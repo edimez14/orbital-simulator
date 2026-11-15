@@ -1,6 +1,18 @@
 <!-- código nuevo edizon -->
 # Plan de desarrollo — Simulador orbital (Leyes de Kepler)
 
+> **Actualización (tareas 1 a 10).** El pre-proyecto y su boceto de interfaz mandan
+> sobre este plan en dos puntos:
+>
+> 1. **Unidades:** el proyecto usa **SI** (m, kg, s) en todo el código, y la interfaz
+>    muestra el tiempo en días. Este plan decía AU / masas solares / años.
+> 2. **Interfaz:** la visualización y los controles son una **app web con Plotly y
+>    Dash** (el panel del boceto), no VPython. Este plan decía controles nativos de
+>    VPython.
+>
+> El detalle de los cambios está en `docs/tareas_cambios.md`. Los módulos de VPython
+> (`render/scene3d.py` y el `Controls` de `ui/controls.py`) quedan por retirar.
+
 **Proyecto:** Simulador computacional en Python del movimiento orbital bajo
 gravitación universal, que verifica las tres leyes de Kepler y la conservación de
 energía y momento angular.

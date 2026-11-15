@@ -23,7 +23,7 @@ numérico paso a paso.
 
 - Variables medidas (t, m, r, v, a, E, L, T, A).
 - Escenarios de prueba: circular, elíptico, hiperbólico.
-- Unidades internas: AU, masas solares, años.
+- Unidades internas: SI (m, kg, s); el tiempo se muestra en días.
 - Tolerancia objetivo inicial: 1 %.
 
 ## 4. Resultados

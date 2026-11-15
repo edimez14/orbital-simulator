@@ -1,0 +1,308 @@
+/* código nuevo edizon */
+/* Tema oscuro del panel (según el boceto de la interfaz). */
+
+body {
+    margin: 0;
+    background: #0a1120;
+    color: #e6edf7;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.app {
+    padding: 16px 20px;
+}
+
+.header {
+    margin-bottom: 14px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.header p {
+    margin: 0;
+    color: #8fa3bf;
+    font-size: 13px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 340px) minmax(0, 1fr) minmax(300px, 380px);
+    gap: 16px;
+    align-items: start;
+}
+
+.panel {
+    background: #0e1626;
+    border: 1px solid #1c2a44;
+    border-radius: 12px;
+    padding: 14px;
+    min-width: 0;
+}
+
+.panel h2 {
+    font-size: 15px;
+    margin: 0 0 10px;
+}
+
+.panel h3 {
+    font-size: 13px;
+    color: #8fa3bf;
+    margin: 14px 0 8px;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color: #8fa3bf;
+    margin: 8px 0 4px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chips label {
+    background: #16233a;
+    color: #c9d6e8;
+    border: 1px solid #1c2a44;
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.chips label:has(input:checked) {
+    background: #2b7fff;
+    color: #ffffff;
+    border-color: #2b7fff;
+}
+
+.chips input {
+    display: none;
+}
+
+.hint {
+    color: #8fa3bf;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.help {
+    background: #12203a;
+    border: 1px solid #1c2a44;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 12px;
+    color: #c9d6e8;
+    margin-bottom: 8px;
+}
+
+/* Controles de la vista y de la animación. */
+.controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.controls .control {
+    flex: 1;
+    min-width: 150px;
+}
+
+.controls label {
+    font-size: 11px;
+    color: #8fa3bf;
+    margin: 0;
+}
+
+/* Las barras de los controles no se salen de su caja. */
+.panel .rc-slider {
+    margin: 8px 10px 24px;
+}
+
+.chip {
+    background: #16233a;
+    color: #c9d6e8;
+    border: 1px solid #1c2a44;
+    border-radius: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.chip-active {
+    background: #2b7fff;
+    color: #ffffff;
+    border-color: #2b7fff;
+}
+
+.ghost {
+    background: transparent;
+    color: #2b7fff;
+    border: 1px dashed #2b7fff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.body-card {
+    background: #111d31;
+    border: 1px solid #1c2a44;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.body-name {
+    font-weight: 600;
+}
+
+.body-role {
+    color: #8fa3bf;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.body-mass {
+    color: #c9d6e8;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.primary {
+    width: 100%;
+    margin-top: 14px;
+    background: #2b7fff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.card {
+    background: #111d31;
+    border: 1px solid #1c2a44;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 11px;
+    color: #8fa3bf;
+}
+
+.card-value {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* Campos editables del panel. */
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    background: #0a1120;
+    color: #e6edf7;
+    border: 1px solid #1c2a44;
+    border-radius: 6px;
+    padding: 6px 8px;
+}
+
+.field {
+    flex: 1;
+}
+
+.triple {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+.triple .field label {
+    font-size: 11px;
+}
+
+.body-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.name-input {
+    flex: 1;
+}
+
+.remove {
+    background: transparent;
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+/* Desplegable del método numérico, en oscuro. */
+.Select-control,
+.Select__control,
+.Select-menu-outer,
+.Select__menu {
+    background: #0a1120 !important;
+    color: #e6edf7 !important;
+    border-color: #1c2a44 !important;
+}
+
+.Select-value-label,
+.Select__single-value,
+.Select-input input {
+    color: #e6edf7 !important;
+}
+
+.Select__menu-list,
+.Select__option {
+    background: #0e1626 !important;
+    color: #c9d6e8 !important;
+}
+
+/* Pantallas medianas: dos columnas (la de gráficas pasa abajo). */
+@media (max-width: 1150px) {
+    .grid {
+        grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+    }
+
+    .grid > .panel:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Pantallas pequeñas: una sola columna. */
+@media (max-width: 780px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid > .panel:last-child {
+        grid-column: auto;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .triple {
+        grid-template-columns: 1fr;
+    }
+}

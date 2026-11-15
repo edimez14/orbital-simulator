@@ -2,11 +2,84 @@
     "codigo_nuevo_edizon": true,
     "_documentacion": {
         "que_es": "Presets de condiciones iniciales para el simulador orbital.",
-        "para_que_sirve": "Cargar rapidamente escenarios de prueba sin escribirlos cada vez.",
-        "unidades": "AU (distancia), masas solares (masa), anos (tiempo).",
+        "para_que_sirve": "Cargar escenarios con datos reales sin escribirlos cada vez.",
+        "unidades": "SI: metros (distancia), kilogramos (masa), segundos (tiempo).",
         "como_se_usa": "main.py lee un preset por nombre y construye los cuerpos.",
         "como_modificarlo": "Anadir un nuevo objeto dentro de 'presets' con la misma forma.",
-        "estado": "Sin datos aun; solo documentacion."
+        "estado": "Datos reales: Tierra-Luna, Sol-Tierra y el sistema solar interno."
     },
-    "presets": []
+    "presets": [
+        {
+            "nombre": "tierra_luna",
+            "descripcion": "La Tierra como cuerpo primario y la Luna orbitando.",
+            "cuerpos": [
+                {
+                    "name": "Tierra",
+                    "mass": 5.972e24,
+                    "position": [0.0, 0.0, 0.0],
+                    "velocity": [0.0, 0.0, 0.0]
+                },
+                {
+                    "name": "Luna",
+                    "mass": 7.342e22,
+                    "position": [3.844e8, 0.0, 0.0],
+                    "velocity": [0.0, 1022.0, 0.0]
+                }
+            ]
+        },
+        {
+            "nombre": "sol_tierra",
+            "descripcion": "El Sol en el centro y la Tierra en orbita casi circular.",
+            "cuerpos": [
+                {
+                    "name": "Sol",
+                    "mass": 1.989e30,
+                    "position": [0.0, 0.0, 0.0],
+                    "velocity": [0.0, 0.0, 0.0]
+                },
+                {
+                    "name": "Tierra",
+                    "mass": 5.972e24,
+                    "position": [1.496e11, 0.0, 0.0],
+                    "velocity": [0.0, 29780.0, 0.0]
+                }
+            ]
+        },
+        {
+            "nombre": "sol_sistema_interno",
+            "descripcion": "El Sol y los cuatro planetas interiores con datos reales.",
+            "cuerpos": [
+                {
+                    "name": "Sol",
+                    "mass": 1.989e30,
+                    "position": [0.0, 0.0, 0.0],
+                    "velocity": [0.0, 0.0, 0.0]
+                },
+                {
+                    "name": "Mercurio",
+                    "mass": 3.301e23,
+                    "position": [5.791e10, 0.0, 0.0],
+                    "velocity": [0.0, 47400.0, 0.0]
+                },
+                {
+                    "name": "Venus",
+                    "mass": 4.867e24,
+                    "position": [1.082e11, 0.0, 0.0],
+                    "velocity": [0.0, 35020.0, 0.0]
+                },
+                {
+                    "name": "Tierra",
+                    "mass": 5.972e24,
+                    "position": [1.496e11, 0.0, 0.0],
+                    "velocity": [0.0, 29780.0, 0.0]
+                },
+                {
+                    "name": "Marte",
+                    "mass": 6.417e23,
+                    "position": [2.279e11, 0.0, 0.0],
+                    "velocity": [0.0, 24070.0, 0.0]
+                }
+            ]
+        }
+    ]
 }

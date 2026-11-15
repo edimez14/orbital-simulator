@@ -1,35 +1,61 @@
 # código nuevo edizon
-"""verlet.py — Integrador de Verlet.
+"""verlet.py — Integrador de velocity-Verlet.
 
 ¿Para qué sirve?
-    Ser el segundo metodo numerico del proyecto, para comparar su precision y su
-    capacidad de conservar energia contra Euler-Cromer.
+    Avanzar el estado del sistema con un método de orden dos: la posición usa la
+    posición, la velocidad y la aceleración del instante actual; la velocidad usa
+    la aceleración actual y la del instante nuevo.
 
-    Forma de posicion de Verlet:
-        r(t+dt) = 2*r(t) - r(t-dt) + a(t) * dt^2
-    (la velocidad se obtiene de la diferencia de posiciones).
+    r(t+dt) = r(t) + v(t)·dt + ½·a(t)·dt²
+    v(t+dt) = v(t) + ½·(a(t) + a(t+dt))·dt
 
 ¿Por qué existe?
-    Recorrer paso a paso la demostracion exige comparar dos integradores con
-    datos, no por suposicion. Verlet suele conservar mejor la energia para un dt
-    adecuado.
+    Antes el archivo usaba la forma de posición de Verlet y estimaba la velocidad
+    con una diferencia hacia atrás: eso reproducía Euler-Cromer y no mejoraba la
+    energía. Esta variante sí es un método distinto y de orden dos (tarea A11).
 
-¿Qué contendrá? (aún sin implementar)
-    - `step(bodies, dt)` : avanza el estado usando Verlet.
-    - Manejo del estado anterior `r(t-dt)` (el primer paso necesita un arranque).
+¿Qué contiene?
+    `step(bodies, dt)` : avanza todos los cuerpos un paso.
 
 ¿Cómo funciona paso a paso?
-    1. Guardar la posicion anterior de cada cuerpo.
-    2. Calcular la nueva posicion con la formula de Verlet.
-    3. Estimar la velocidad a partir del cambio de posicion.
-    4. Devolver el nuevo estado.
-
-Validacion (PDF seccion 5.3, paso 5)
-    Implementarlo DESPUES de confirmar que Euler-Cromer funciona. Comparar ambos:
-    Verlet debe conservar la energia igual o mejor.
+    1. Calcular las aceleraciones en el instante actual.
+    2. Mover todas las posiciones con la fórmula de arriba.
+    3. Recalcular las aceleraciones con las posiciones nuevas.
+    4. Actualizar las velocidades con el promedio de las dos aceleraciones.
 
 ¿Cómo modificarlo?
-    - Cambiar el arranque del primer paso: revisar solo esa parte.
-    - Probar la variante "velocity Verlet": crear un archivo nuevo si se quiere
-      mantener ambos metodos disponibles.
+    - Cambiar el método: crear otro archivo en `integrators/`, no tocar este.
+    - Añadir otra magnitud: no hace falta; el motor la guarda desde fuera.
 """
+
+from src.physics.gravity import compute_accelerations
+
+
+def step(bodies, dt):
+    """Avanza el estado del sistema un paso `dt` con velocity-Verlet.
+
+    Recibe:
+        bodies : lista de cuerpos (masa, posición y velocidad actuales).
+        dt     : cuánto avanza el tiempo en este paso, en segundos.
+    Devuelve:
+        Nada; actualiza posición, velocidad, aceleración y posición anterior.
+    """
+    # Aceleración del instante actual, antes de mover nada.
+    current_accelerations = compute_accelerations(bodies)
+    previous_positions = [body.position.copy() for body in bodies]
+
+    # Primero se mueven TODAS las posiciones...
+    for body, acceleration in zip(bodies, current_accelerations):
+        body.position = body.position + body.velocity * dt + 0.5 * acceleration * dt**2
+
+    # ...y solo entonces se recalculan las aceleraciones con las posiciones nuevas.
+    new_accelerations = compute_accelerations(bodies)
+
+    # La velocidad combina la aceleración vieja y la nueva: así el método es de
+    # orden dos y conserva mejor la energía.
+    for body, acceleration, new_acceleration, previous in zip(
+        bodies, current_accelerations, new_accelerations, previous_positions
+    ):
+        body.velocity = body.velocity + 0.5 * (acceleration + new_acceleration) * dt
+        body.acceleration = new_acceleration
+        body.previous_position = previous

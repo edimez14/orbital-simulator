@@ -4,6 +4,11 @@
 Guía única para conseguir y colocar **todo lo que se ve en el simulador**:
 planetas, Sol, estrellas de fondo, lunas y demás cuerpos celestes.
 
+> **Actualización (tareas 1 a 10).** La interfaz ahora es **Plotly + Dash**. La vista
+> 3D de Plotly dibuja los cuerpos como esferas de color, así que **no usa las
+> texturas** de `assets/textures/`; quedan como material del proyecto. El resto de
+> esta guía describe la etapa VPython.
+
 ---
 
 ## 1. Regla de oro: VPython NO carga modelos 3D
