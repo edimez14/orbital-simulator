@@ -741,9 +741,14 @@ probado lo que solo cubre una prueba automática.
 | M46 | Recorrido con Tab | El grupo de tipos de órbita recibe foco visible |
 | M47 | Inspección de etiquetas | 29 de 29 etiquetas contienen su control |
 | M48 | Anchos 390, 780, 1024, 1150, 1280 y 1440 px | `scrollWidth == innerWidth`; sin desborde general |
+| M49 | Ventana 720×600 (equivalente a zoom 200 % de 1440×1200) | Una columna, contenido operable y sin desborde |
 
 Casos cubiertos por pruebas automáticas, **no repetidos en navegador**:
-M05, M06, M07–M10, M23–M26, M28–M31 (ver `tests/`). Casos **pendientes** en
+M05, M06, M07–M10, M23–M26, M28–M31 (ver `tests/`).
+
+Los cuatro botones de paginación de la tabla se rotularon como «Primera página»,
+«Página anterior», «Página siguiente» y «Última página» (etiqueta y título
+accesible), verificado en el navegador. Casos **pendientes** en
 navegador: M04, M11–M19, M21, M27, M32–M45, M49–M56 y lector de pantalla real.
 No se declaran aprobados.
 

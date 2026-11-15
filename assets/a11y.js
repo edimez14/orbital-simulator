@@ -39,8 +39,29 @@
         }
     }
 
+    // Botones de paginación de la tabla: Dash los dibuja solo con un icono.
+    // Se rotulan por su clase estable (tarea A40).
+    var PAGINATION_NAMES = {
+        "first-page": "Primera página",
+        "previous-page": "Página anterior",
+        "next-page": "Página siguiente",
+        "last-page": "Última página"
+    };
+
+    function enhancePagination() {
+        Object.keys(PAGINATION_NAMES).forEach(function (className) {
+            document.querySelectorAll("button." + className).forEach(function (button) {
+                if (button.getAttribute("aria-label") !== PAGINATION_NAMES[className]) {
+                    button.setAttribute("aria-label", PAGINATION_NAMES[className]);
+                    button.title = PAGINATION_NAMES[className];
+                }
+            });
+        });
+    }
+
     function enhanceAll() {
         document.querySelectorAll("button.dash-dropdown").forEach(enhance);
+        enhancePagination();
     }
 
     function start() {
